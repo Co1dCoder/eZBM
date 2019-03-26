@@ -1,0 +1,8 @@
+D:\GithubProjects\eZBM\bin\Bentley.ParametricModelingExample.XML
+D:\GithubProjects\eZBM\bin\Bentley.ParametricModelingExample.dll
+D:\GithubProjects\eZBM\bin\Bentley.ParametricModelingExample.pdb
+D:\GithubProjects\eZBM\ParametricModelingExample\obj\Debug\ParametricModelingExample.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\ParametricModelingExample\obj\Debug\Bentley.ParametricModelingExample.Properties.Resource.resources
+D:\GithubProjects\eZBM\ParametricModelingExample\obj\Debug\ParametricModelingExample.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\ParametricModelingExample\obj\Debug\Bentley.ParametricModelingExample.dll
+D:\GithubProjects\eZBM\ParametricModelingExample\obj\Debug\Bentley.ParametricModelingExample.pdb

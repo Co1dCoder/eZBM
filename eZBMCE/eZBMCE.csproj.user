@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartArguments>csc /r:ITestDll=ITest.dll Program.cs</StartArguments>
+    <StartProgram>C:\Softwares\Civil Engineering\Bentley\MicroStation CE\MicroStation\microstation.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>C:\Softwares\Civil Engineering\Bentley\MicroStation CE\MicroStation\microstation.exe</StartProgram>
+    <StartArguments>csc /r:ITestDll=ITest.dll Program.cs</StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartProgram>D:\Softwares\Civil Engineering\Bentley\Microstation CE\MicroStation\MicroStation.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Design|AnyCPU'">
+    <StartProgram>D:\Softwares\Civil Engineering\Bentley\Microstation CE\MicroStation\MicroStation.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>

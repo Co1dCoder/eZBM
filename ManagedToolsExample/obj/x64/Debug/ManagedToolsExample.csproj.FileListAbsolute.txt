@@ -1,0 +1,11 @@
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedToolsExample.dll
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedToolsExample.pdb
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.TestModifyEdgeToolForm.resources
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.PlaceGroupedHoleForm.resources
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.dll
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\x64\Debug\ManagedToolsExample.pdb
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.XML
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.dll
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.pdb

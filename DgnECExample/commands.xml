@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+
+  <RootKeyinTable ID="root">
+    <Keyword SubtableRef="Commands" CommandWord="DGNECEXAMPLE">
+      <Options Required="true" />
+    </Keyword>
+  </RootKeyinTable>
+
+  <SubKeyinTables>
+    <KeyinTable ID="Commands">
+      <Keyword SubtableRef="SchemaCmd" CommandWord="SCHEMA">
+        <Options Required="true" />
+      </Keyword>
+      <Keyword SubtableRef="InstanceCmd" CommandWord="INSTANCE">
+        <Options Required="true" />
+      </Keyword>
+    </KeyinTable>
+  </SubKeyinTables>
+  
+    <SubKeyinTables>
+    <KeyinTable ID="SchemaCmd">
+      <Keyword CommandWord="FIND"/>
+      <Keyword CommandWord="IMPORT"/>
+    </KeyinTable>
+  </SubKeyinTables>
+  
+    <SubKeyinTables>
+    <KeyinTable ID="InstanceCmd">
+      <Keyword CommandWord="FINDALL"/>
+      <Keyword CommandWord="WRITE"/>
+      <Keyword CommandWord="FINDALLONELEMENT"/>
+    </KeyinTable>
+  </SubKeyinTables>
+
+  <KeyinHandlers>
+    <KeyinHandler Keyin="DGNECEXAMPLE SCHEMA FIND"                        Function="DgnECExample.Keyin.CmdFindSchemas"/>
+    <KeyinHandler Keyin="DGNECEXAMPLE SCHEMA IMPORT"                       Function="DgnECExample.Keyin.CmdImportSchemas"/>
+    <KeyinHandler Keyin="DGNECEXAMPLE INSTANCE FINDALL"                    Function="DgnECExample.Keyin.CmdFindAllInstances"/>
+    <KeyinHandler Keyin="DGNECEXAMPLE INSTANCE WRITE"                      Function="DgnECExample.Keyin.CmdWriteInstanceOnElement"/>
+    <KeyinHandler Keyin="DGNECEXAMPLE INSTANCE FINDALLONELEMENT"           Function="DgnECExample.Keyin.CmdFindAllInstancesOnElement"/>
+  </KeyinHandlers>
+
+</KeyinTree>
+
+

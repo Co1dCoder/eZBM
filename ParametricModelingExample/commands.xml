@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+
+    <RootKeyinTable ID="root">
+        <Keyword SubtableRef="Commands" CommandWord="PARAMETRICMODELINGEXAMPLE">
+            <Options Required="true" />
+        </Keyword>
+    </RootKeyinTable>
+
+    <SubKeyinTables>
+        <KeyinTable ID="Commands">            
+            <Keyword SubtableRef="CreateCmd" CommandWord="CREATE">
+                <Options Required="true" />
+            </Keyword>
+            <Keyword SubtableRef="RemoveCmd" CommandWord="REMOVE">
+                <Options Required="true" />
+            </Keyword>
+            <Keyword SubtableRef="VariableCmd" CommandWord="VARIABLE">
+                <Options Required="true" />
+            </Keyword>
+        </KeyinTable>
+
+        <KeyinTable ID="CreateCmd">
+            <Keyword CommandWord="VARIABLES" />
+            <Keyword CommandWord="EXPRESSIONS" />
+            <Keyword CommandWord="VARIATIONS" />
+        </KeyinTable>
+
+        <KeyinTable ID="RemoveCmd">
+            <Keyword CommandWord="VARIABLE" />
+            <Keyword CommandWord="VARIATION" />
+        </KeyinTable>
+        
+        <KeyinTable ID="VariableCmd">
+            <Keyword CommandWord="IMPORT" />
+            <Keyword CommandWord="EXPORT" />
+        </KeyinTable>
+
+    </SubKeyinTables>
+
+    <KeyinHandlers>
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE CREATE VARIABLES"                  Function="Bentley.ParametricModelingExample.Keyin.CmdAddVariables"/>
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE CREATE EXPRESSIONS"                Function="Bentley.ParametricModelingExample.Keyin.CmdAddExpressions"/>
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE CREATE VARIATIONS"                 Function="Bentley.ParametricModelingExample.Keyin.CmdAddVariations"/>
+
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE REMOVE VARIABLE"                   Function="Bentley.ParametricModelingExample.Keyin.CmdRemoveVariable"/>
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE REMOVE VARIATION"                  Function="Bentley.ParametricModelingExample.Keyin.CmdRemoveVariation"/>
+
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE VARIABLE IMPORT"                   Function="Bentley.ParametricModelingExample.Keyin.CmdImportVariables"/>
+        <KeyinHandler Keyin="PARAMETRICMODELINGEXAMPLE VARIABLE EXPORT"                   Function="Bentley.ParametricModelingExample.Keyin.CmdExportVariables"/>
+
+    </KeyinHandlers>
+
+</KeyinTree>
+

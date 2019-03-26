@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DgnECExample</name>
+    </assembly>
+    <members>
+        <member name="T:DgnECExample.CreateAndImportSchemaForm">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnClose_Click(System.Object,System.EventArgs)">
+                    * Close the form.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnClear_Click(System.Object,System.EventArgs)">
+                    * User does not want this schema and wants to create another one.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnCreateSchema_Click(System.Object,System.EventArgs)">
+                    * Set schema name.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnAddClass_Click(System.Object,System.EventArgs)">
+                    * Add a new class to schema.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnAddProperty_Click(System.Object,System.EventArgs)">
+                    * Add a new property to the selected class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.BtnCreateAndImportSchema_Click(System.Object,System.EventArgs)">
+                    * Create the schema and then import it into the file.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.GetTypeFromString(System.String)">
+                    * Get IECType from string.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:DgnECExample.CreateAndImportSchemaForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DgnECExample.CreateAndImportSchemaForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DgnECExample.DgnECExample">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.DgnECExample.#ctor(System.IntPtr)">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.Run(System.String[])">
+                    * Required Run method of AddIn class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.Instance">
+                    * Returns an instance of the Addin class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.AddSchema(System.String)">
+                    * Adds the name of the new schema that is imported to the list.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.GetImportedSchemas">
+                    * Returns the list of imported schemas.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.FindSchemas">
+                    * Find schemas.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.FindAllInstances">
+                    * Find instances.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.ImportSchemas">
+                    * Import schemas.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.WriteInstanceOnElement">
+                    * Write instance on selected element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.DgnECExample.FindAllInstancesOnElement">
+                    * Find instances on selected element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:DgnECExample.FindInstancesOnElementForm">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.#ctor(System.Boolean)">
+                    * Constructor for finding all instances.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.GetSearchClasses">
+                    * Get all classes from all schemas the user created in this session.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.PopulateInstances(Bentley.DgnPlatformNET.DgnEC.DgnECInstanceCollection)">
+                    * Add instances to the list.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.BtnClose_Click(System.Object,System.EventArgs)">
+                    * Close this form.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:DgnECExample.FindInstancesOnElementForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DgnECExample.FindInstancesOnElementTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.ShowInstancesForm">
+                    * Display instances form if it is closed.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.ExitTool">
+                    * Exit tool.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Find instances on element on first data button if it lies on some element.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+                    * Instances were read in OnDataButton method, just return Error from this method.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.OnRestartTool">
+                    * Restart tool
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Restart the tool on reset.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.FindInstancesOnElementTool.InstallNewInstance">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:DgnECExample.WriteInstanceForm">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.LoadImportedSchemas">
+                    * List imported schemas in this session.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.CmbImportedSchemas_SelectedIndexChanged(System.Object,System.EventArgs)">
+                    * List classes in the selected schema.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.GetSelectedInstanceInfoToWrite">
+                    * Get information about instance to write.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.CmbClasses_SelectedIndexChanged(System.Object,System.EventArgs)">
+                    * Populate properties of the selected class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:DgnECExample.WriteInstanceForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DgnECExample.WriteInstanceForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DgnECExample.PropertyInfoToWrite">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.PropertyInfoToWrite.GetValueAsString">
+                    * Get property value as string.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.PropertyInfoToWrite.GetValueAsBoolean">
+                    * Get property value as boolean.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.PropertyInfoToWrite.GetValueAsInt">
+                    * Get property value as int.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.PropertyInfoToWrite.GetValueAsDouble">
+                    * Get property value as double.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:DgnECExample.InstanceInfoToWrite">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.InstanceInfoToWrite.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:DgnECExample.Keyin">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.Keyin.CmdFindSchemas(System.String)">
+                    * Keyin to function mapping: Calls DgnECExample.FindSchemas().
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.Keyin.CmdFindAllInstances(System.String)">
+                    * Keyin to function mapping: Calls DgnECExample.FindAllInstances().
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.Keyin.CmdImportSchemas(System.String)">
+                    * Keyin to function mapping: Calls DgnECExample.ImportSchemas().
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.Keyin.CmdWriteInstanceOnElement(System.String)">
+                    * Keyin to function mapping: Starts write instance on element tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.Keyin.CmdFindAllInstancesOnElement(System.String)">
+                    * Keyin to function mapping: Starts find instances on element tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:DgnECExample.SchemaListForm">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.SchemaListForm.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.SchemaListForm.FindSchemas">
+                    * Find schemas and list them.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.SchemaListForm.BtnClose_Click(System.Object,System.EventArgs)">
+                    * Closes this form.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:DgnECExample.SchemaListForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DgnECExample.SchemaListForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DgnECExample.SchemaListForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DgnECExample.WriteInstanceOnElementTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.ExitTool">
+                    * Exit tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Write instance on the element on first data button if it lies on some element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.SetInstancePropertyValue(Bentley.ECObjects.Instance.StandaloneECDInstance@,DgnECExample.PropertyInfoToWrite)">
+                    * Set instance property value based on type of the property.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+                    * Instance was written in OnDataButton method, just return Error from this method.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.OnRestartTool">
+                    * Restart tool
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Restart the tool on reset.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:DgnECExample.WriteInstanceOnElementTool.InstallNewInstance">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+    </members>
+</doc>

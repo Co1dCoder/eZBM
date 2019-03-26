@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ORDDirectory>D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\</ORDDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A8295AF-DB22-4435-9EC0-E1A76779AAD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DgnECExample</RootNamespace>
+    <AssemblyName>DgnECExample</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <DocumentationFile>..\bin\DgnECExample.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(ORDDirectory)mdlapps\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\bin\DgnECExample.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>$(ORDDirectory)mdlapps\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>
+      $(ORDDirectory)mdlapps\
+    </OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>
+      $(ORDDirectory)mdlapps\
+    </OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bentley.DgnDisplayNet">
+      <HintPath>$(ORDDirectory)Bentley.DgnDisplayNet.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.DgnPlatformNET">
+      <HintPath>$(ORDDirectory)Bentley.DgnPlatformNET.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.EC.Persistence3">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.EC.Persistence3.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.ECObjects.MixedMode3">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.ECObjects.MixedMode3.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.ECObjects3">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.ECObjects3.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.ECSystem3">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.ECSystem3.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.General.1.0">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.General.1.0.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.GeometryNET">
+      <HintPath>$(ORDDirectory)Bentley.GeometryNET.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.GeometryNET.Common">
+      <HintPath>$(ORDDirectory)Bentley.GeometryNET.Common.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.GeometryNET.Structs">
+      <HintPath>$(ORDDirectory)Bentley.GeometryNET.Structs.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.MicroStation.Interfaces.1.0">
+      <HintPath>$(ORDDirectory)Assemblies\Bentley.MicroStation.Interfaces.1.0.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="Bentley.Platform">
+      <HintPath>$(ORDDirectory)Assemblies\ECFramework\Bentley.Platform.dll</HintPath>
+      <private>False</private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ustation">
+      <HintPath>$(ORDDirectory)ustation.dll</HintPath>
+      <private>False</private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateAndImportSchemaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAndImportSchemaForm.Designer.cs">
+      <DependentUpon>CreateAndImportSchemaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DgnECExample.cs" />
+    <Compile Include="FindInstancesOnElementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindInstancesOnElementForm.Designer.cs">
+      <DependentUpon>FindInstancesOnElementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindInstancesOnElementTool.cs" />
+    <Compile Include="WriteInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteInstanceForm.Designer.cs">
+      <DependentUpon>WriteInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchemaListForm.Designer.cs">
+      <DependentUpon>SchemaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteInstanceOnElementTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="commands.xml">
+      <LogicalName>CommandTable.xml</LogicalName>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAndImportSchemaForm.resx">
+      <DependentUpon>CreateAndImportSchemaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindInstancesOnElementForm.resx">
+      <DependentUpon>FindInstancesOnElementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteInstanceForm.resx">
+      <DependentUpon>WriteInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchemaListForm.resx">
+      <DependentUpon>SchemaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DgnECExample.mke" />
+    <None Include="openSln.bat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rd /s /q "$(SolutionDir)obj"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

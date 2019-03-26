@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bentley.ParametricModelingExample</name>
+    </assembly>
+    <members>
+        <member name="T:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn">
+            * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.#ctor(System.IntPtr)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.Run(System.String[])">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.Instance">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.GetDefinitionModel(System.String,System.Boolean)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateVariable(Bentley.DgnPlatformNET.EditParameterDefinitions,System.String,System.Double,Bentley.DgnPlatformNET.ParameterType)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateVariable(Bentley.DgnPlatformNET.EditParameterDefinitions,System.String,System.Int32)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateVariable(Bentley.DgnPlatformNET.EditParameterDefinitions,System.String,System.Boolean)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.SetExpressionForVariable(Bentley.DgnPlatformNET.ParameterDefinition,System.String,Bentley.DgnPlatformNET.EditParameterDefinitions)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.RemoveVariable(Bentley.DgnPlatformNET.EditParameterDefinitions,System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ObtainExportFileLocation">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ObtainImportFileLocation">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.mdlModelRef_activateAndDisplay(System.IntPtr)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateLine(Bentley.GeometryNET.DSegment3d,System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateLineString(Bentley.GeometryNET.DPoint3d[],System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateEllipse(Bentley.GeometryNET.DPoint3d,System.Double,System.Double,System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateArc(Bentley.GeometryNET.DPoint3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.CreateComplexShape(Bentley.GeometryNET.DPoint3d[],Bentley.GeometryNET.DPoint3d,System.Boolean,System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleAddVariables">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleAddExpressions">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleAddVariations">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleRemoveVariable">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleRemoveVariation">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleImportVariables">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.ParametricModelingExampleAddIn.ExampleExportVariables">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:Bentley.ParametricModelingExample.Keyin">
+            * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdAddVariables(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdAddExpressions(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdAddVariations(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdRemoveVariable(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdRemoveVariation(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdImportVariables(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:Bentley.ParametricModelingExample.Keyin.CmdExportVariables(System.String)">
+            * @bsimethod                                                              Bentley Systems
+            +---------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:Bentley.ParametricModelingExample.Properties.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Error_InvalidExpression">
+            <summary>
+              Looks up a localized string similar to Invalid expression..
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Error_ParameterExist">
+            <summary>
+              Looks up a localized string similar to Parameter {0} already exists..
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Error_ParameterNotFound">
+            <summary>
+              Looks up a localized string similar to Parameter {0} not found..
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.FileType_Csv">
+            <summary>
+              Looks up a localized string similar to Comma-delimited(*.csv).
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Title_Export">
+            <summary>
+              Looks up a localized string similar to Export Variables to CSV.
+            </summary>
+        </member>
+        <member name="P:Bentley.ParametricModelingExample.Properties.Resource.Title_Import">
+            <summary>
+              Looks up a localized string similar to Import Variables from CSV.
+            </summary>
+        </member>
+    </members>
+</doc>

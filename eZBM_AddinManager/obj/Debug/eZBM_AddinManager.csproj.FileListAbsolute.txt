@@ -1,0 +1,8 @@
+D:\GitHubProjects\eZBM\bin\eZBM_AddinManager.dll
+D:\GitHubProjects\eZBM\bin\eZBM_AddinManager.pdb
+D:\GitHubProjects\eZBM\eZBM_AddinManager\obj\Debug\eZBMCE.AddinManager.form_AddinManager.resources
+D:\GitHubProjects\eZBM\eZBM_AddinManager\obj\Debug\eZBM_AddinManager.csproj.GenerateResource.Cache
+D:\GitHubProjects\eZBM\eZBM_AddinManager\obj\Debug\eZBM_AddinManager.dll
+D:\GitHubProjects\eZBM\eZBM_AddinManager\obj\Debug\eZBM_AddinManager.pdb
+D:\GitHubProjects\eZBM\eZBM_AddinManager\obj\Debug\eZBM_AddinManager.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\eZBM\bin\eZBM_AddinManager.XML

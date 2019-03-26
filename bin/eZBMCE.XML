@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eZBMCE</name>
+    </assembly>
+    <members>
+        <member name="T:eZBMCE.Debug.Cif.CifTest">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.Cif.CifTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Cif.CifTest.CifFastDebug">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.Cif.CifTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Cif.CifTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Cif.CifTest.CifFastDebug(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 遍历廊道 </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.FastDebug">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.FastDebug.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.FastDebug.DebugFast">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.FastDebug.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.FastDebug.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.FastDebug.DebugFast(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.DimensionTest">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.DimensionTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.DimensionTest.TestDimension">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.DimensionTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.DimensionTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.DimensionTest.TestDimension(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:eZBMCE.Debug.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.Geometry.EcLevelManager">
+            <summary> 对图层进行管理 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.Geometry.EcLevelManager.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcLevelManager.TestCreateGeometry">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.Geometry.EcLevelManager.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcLevelManager.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcLevelManager.ManageLevels(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Debug.Geometry.EcLevelManager.CommandDescription"/> </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.Geometry.EcCreateGeometryTest">
+            <summary> 几何模型的信息提取与几何元素的创建 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.Geometry.EcCreateGeometryTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcCreateGeometryTest.TestCreateGeometry">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.Geometry.EcCreateGeometryTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcCreateGeometryTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcCreateGeometryTest.TestCreateGeometry(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Debug.Geometry.EcCreateGeometryTest.CommandDescription"/> </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.Geometry.EcGeometryTest">
+            <summary> 几何模型的信息提取与几何元素的创建 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.Geometry.EcGeometryTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcGeometryTest.TestGeometry">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.Geometry.EcGeometryTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcGeometryTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.EcGeometryTest.TestGeometry(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Debug.Geometry.EcGeometryTest.CommandDescription"/> </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.Geometry.GroupedHoleHelper.CreateGroupedHoleElement(Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d)">
+            <summary> 根据两个点创建出一个多边形，并在其中开孔，最终生成 GroupedHoleElement </summary>
+            <param name="start"></param>
+            <param name="opposite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Debug.EcObject.EcExample.DebugFast(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.EcObject.EcItemTypeTest">
+            <summary> 几何模型的信息提取与几何元素的创建 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.EcObject.EcItemTypeTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcObject.EcItemTypeTest.TestItemType">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.EcObject.EcItemTypeTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcObject.EcItemTypeTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcObject.EcItemTypeTest.TestItemType(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Debug.EcObject.EcItemTypeTest.CommandDescription"/> </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.EcSelect">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.EcSelect.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcSelect.SelectElemlents">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.EcSelect.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcSelect.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.EcSelect.SelectElemlents(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Debug.EcSelect.CommandDescription"/> </summary>
+        </member>
+        <member name="T:eZBMCE.Debug.CommandTemplate">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Debug.CommandTemplate.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.CommandTemplate.TemplateCmd">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.CommandTemplate.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Debug.CommandTemplate.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Debug.CommandTemplate.DoSomething(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="T:eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand">
+            <param name="docMdf"></param>
+            <returns>如果要取消操作（即将事务 Abort 掉），则返回 false，如果要提交事务，则返回 true </returns>
+        </member>
+        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.ExecuteCommand(eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand)">
+            <summary> 执行外部命令，并且在执行命令之前，自动将 事务打开</summary>
+            <param name="cmd">要执行的命令</param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.DoSomethingTemplate(eZBMCE.AddinManager.DocumentModifier)">
+            <summary>
+            具体的调试操作的代码模板
+            </summary>
+            <param name="docMdf"></param>
+            <param name="impliedSelection"></param>
+        </member>
+        <member name="T:eZBMCE.AddinManager.DocumentModifier">
+            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
+        </member>
+        <member name="P:eZBMCE.AddinManager.DocumentModifier.Application">
+            <summary> 当前活动的进程 </summary>
+        </member>
+        <member name="P:eZBMCE.AddinManager.DocumentModifier.ActiveViewport">
+            <summary> 当前活动的视口 </summary>
+        </member>
+        <member name="F:eZBMCE.AddinManager.DocumentModifier._messageCenter">
+            <summary> 消息中心 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.#ctor(System.Boolean)">
+            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
+            <param name="openDebugerText">是否要打开一个文本调试器</param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.TransactionRollBack">
+            <summary> 回滚事务 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLineIntoDebuger(System.Object[])">
+            <summary> 向文本调试器中写入数据 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLinesIntoDebuger(System.Object[])">
+            <summary> 向文本调试器中写入多行数据 </summary>
+            <param name="lines"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Object[])">
+            <summary> 实时显示调试信息 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteAlterMessageNow(System.Object[])">
+            <summary> 在弹出的对话框中，实时显示调试信息 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteCurrentMethodName">
+            <summary> 实时显示当前正在执行的方法的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Boolean,System.Object[])">
+            <summary> 实时显示调试信息 </summary>
+            <param name="openAlertBox">是否要弹出一个警告对话框</param>
+            <param name="value"></param>
+        </member>
+        <member name="T:eZBMCE.AddinManager.DllActivator_eZBM">
+            <summary> 用于 AddinManager 中调试 dll 时将引用的程序集加载到进程中 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DllActivator_eZBM.ActivateReferences">
+            <summary>
+            激活本DLL所引用的那些DLLs
+            </summary>
+        </member>
+        <member name="M:eZBMCE.Examples.GeometryCreator.CreateLineString(Bentley.DgnPlatformNET.DgnModel,Bentley.DgnPlatformNET.Elements.Element,Bentley.GeometryNET.DPoint3d[])">
+            <summary> 创建线串对象 </summary>
+            <returns>比如：Line String（由 line 组成）</returns>
+        </member>
+        <member name="M:eZBMCE.Examples.GeometryCreator.CreateArc(Bentley.DgnPlatformNET.DgnModel)">
+            <summary> 创建圆弧或椭圆弧 </summary>
+            <returns> </returns>
+        </member>
+        <member name="M:eZBMCE.Examples.GeometryCreator.CreateComplexString(Bentley.DgnPlatformNET.DgnModel,Bentley.DgnPlatformNET.Elements.Element,Bentley.GeometryNET.DPoint3d[])">
+            <summary> 创建复杂链对象 </summary>
+            <returns>比如：Complex Chain（由 line、arc组成）</returns>
+        </member>
+        <member name="T:eZBMCE.Addins.SnoopObjects.EcSnoopObjects">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandDescription"/> </summary>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CheckProductType">
+            <summary> 当前运行的程序 </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.TryConvertMSElementToORDElement(Bentley.CifNET.SDK.ConsensusConnection,Bentley.DgnPlatformNET.Elements.Element[])">
+            <summary>
+            尝试将MS中的元素转换为ORD中的元素
+            </summary>
+            <param name="sdkCon"></param>
+            <param name="objs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.SnoopObjects.Form_ObjectProperties.ConvertIEnumerableToArray(System.Object)">
+            <summary>
+            将所有实现 IEnumerable泛型接口 的对象转换为数组对象
+            </summary>
+            <param name="value"></param>
+            <returns>如果输入对象没有实现 IEnumerable泛型接口，则返回原对象</returns>
+        </member>
+        <member name="F:eZBMCE.SnoopObjects.Form_ObjectProperties.SystemTypes">
+            <summary> 系统自带的简单类型，这些类型不用进一步地提取属性 </summary>
+        </member>
+        <member name="F:eZBMCE.SnoopObjects.Form_ObjectProperties.BentleySimpleTypes">
+            <summary> Bentley 中的一些简单的数据类型，这些类型不用进一步地提取属性 </summary>
+        </member>
+        <member name="M:eZBMCE.SnoopObjects.Form_ObjectProperties.CanBeExpanded(System.Windows.Forms.GridItem)">
+            <summary> 某项属性是否需要扩展出一个新窗口进行数据展示 </summary>
+        </member>
+        <member name="F:eZBMCE.SnoopObjects.Form_ObjectProperties.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:eZBMCE.SnoopObjects.Form_ObjectProperties.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:eZBMCE.SnoopObjects.Form_ObjectProperties.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:eZBMCE.Utilities.ExtensionMethods">
+            <summary> 扩展函数 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToArray(Bentley.Interop.MicroStationDGN.ElementEnumerator)">
+            <summary>  </summary>
+            <param name="elements"><seealso cref="T:Bentley.Interop.MicroStationDGN.Element"/>集合</param>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToElementHandle(Bentley.DgnPlatformNET.Elements.Element)">
+            <summary> C# Element  转换为 ElemHandle 指针 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsInteropElement(Bentley.DgnPlatformNET.Elements.Element,Bentley.Interop.MicroStationDGN.ModelReference)">
+            <summary> COM Element 与 Native Element 的相互转换 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsNativeElement(Bentley.Interop.MicroStationDGN.Element,Bentley.DgnPlatformNET.DgnModel)">
+            <summary> COM Element 与 Native Element 的相互转换 </summary>
+        </member>
+        <member name="T:eZBMCE.Utilities.Selector">
+            <summary> 界面中的元素选择器 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Selector.SelectSingleElement``1">
+            <summary> 在界面中选择一个单一元素 </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlWindow_viewWindowGet(System.Int64)">
+            <summary>
+            通过视图取得对应的MSWindow句柄
+            </summary>
+            <param name="viewNum">视图编号，0对应视图1，7对应视图8</param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlView_fitViewToRange(Bentley.GeometryNET.DPoint3d@,Bentley.GeometryNET.DPoint3d@,eZBMCE.Utilities.MDLFunctions.FitViewOptions,System.Int64)">
+            <summary>
+            Fit the contents of the specified range in the given view. 
+            </summary>
+            <param name="minP">the minimum X Y and Z values of the range </param>
+            <param name="maxP">the maximum X Y and Z values of the range </param>
+            <param name="optionP">the FitViewOptions to apply to the view when it is redrawn </param>
+            <param name="viewIndex">the index of the view to fit the specified range block in.
+            viewIndex在编程时是以0为基准的，也就是说，viewIndex = 0代表的是“视图1”（MicroStation中最多有8个视图） </param>
+            <returns>StatusInt:SUCCESS if the view is redrawn without error.  </returns>
+            <remarks>Range points need to be in the view coordinate system, see mdlRMatrix_multiplyRange. 
+            Unlike many other view functions, this function expects points in design file coordinates, so apply the currtrans via mdlCurrTrans_transformPointArray.
+            </remarks>
+        </member>
+        <member name="T:eZBMCE.Utilities.MDLFunctions.FitViewOptions">
+            <summary>
+            Options control structure for fitting views. 
+            </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.forceActiveZToCenter">
+            <summary> make ActiveZ go to center of view volume </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.expandClippingPlanes">
+            <summary> move front and back planes out as needed </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.disableCenterCamera">
+            <summary> disableCenterCamera whether fit view re-centers the camera </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreTransients">
+            <summary> ignoreTransients whether transient elements should be included in fit range </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.dontIncludeParentsOfNestedRefs">
+            <summary> dontIncludeParentsOfNestedRefs  if true, do only modelRefs in fitList, and not the parent references </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreCallouts">
+            <summary> ignoreCallouts  if true, callouts will be ignored </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding">
+            <summary> optionPadding  reserved </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding2">
+            <summary> optionPadding2 reserved </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlElement_extractRange(System.Int64@,System.Int64)">
+            <summary>
+            Extract your element's range (two points: low left bottom point + high right top point). 
+            Used to extract the range from an element. The range is transformed by the current transform if one exists. 
+            </summary>
+            <param name="rangeP">out: rangeP is the element range of type DVector3d*.  </param>
+            <param name="pElement">is the input element</param>
+            <returns>SUCCESS if the element range is extracted successfully - an appropriate error code otherwise. </returns>
+        </member>
+        <member name="T:eZBMCE.Utilities.Utils">
+            <summary> 一些常用的静态方式，用来辅助开发 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.TryGetElement``1">
+            <summary> 从当前界面中的选择集中提取指定类型的对象 </summary>
+            <returns>如果未选择指定类型的对象，则返回null</returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetSelection">
+            <summary> 获取当前选择集（Net） </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetSelection(Bentley.Interop.MicroStationDGN.Application)">
+            <summary> 获取当前选择集（Interop） </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.ShowElementProperties(Bentley.DgnPlatformNET.Elements.Element)">
+            <summary> 显示某Element的属性 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetDefinitionModel(System.String,System.Boolean)">
+            <summary> Get definiton model. </summary>
+            <param name="modelName">Definition model name. 如果输入null，则返回当前活动的DgnModel </param>
+            <param name="createIfNotFound">Create a new definition model if the model does not exist.</param>
+            <returns>Returns definition model.</returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.UpdateView(System.Int32)">
+            <summary> 刷新视口显示 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.FitView(System.Int32)">
+            <summary> 视口匹配对象 </summary>
+        </member>
+        <member name="T:eZBMCE.AddinInitialize.Program">
+            <summary>
+            Main entry point class for this addin application.
+            When loading an AddIn MicroStation looks for a class
+            derived from AddIn.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:eZBMCE.AddinInitialize.Program.Run(System.String[])" -->
+        <member name="M:eZBMCE.AddinInitialize.Program.eZBMCE_ReloadEvent(Bentley.MstnPlatformNET.AddIn,Bentley.MstnPlatformNET.AddIn.ReloadEventArgs)">
+            <summary>
+             Handles MDL ONUNLOAD requests when the application Is being unloaded.
+             </summary>
+             <param name="eventArgs"></param>
+        </member>
+        <member name="M:eZBMCE.AddinInitialize.Program.eZBMCE_UnloadedEvent(Bentley.MstnPlatformNET.AddIn,Bentley.MstnPlatformNET.AddIn.UnloadedEventArgs)">
+            <summary>
+            Handles MicroStation UNLOADED event.
+            </summary>
+            <param name="sender"></param>
+            <param name="eventArgs"></param>
+        </member>
+        <member name="M:eZBMCE.AddinInitialize.Program.OnUnloading(Bentley.MstnPlatformNET.AddIn.UnloadingEventArgs)">
+            <summary>
+            Handles MDL ONUNLOAD requests when the application is being unloaded.
+            </summary>
+            <param name="eventArgs"></param>
+        </member>
+        <member name="T:eZBMCE.AddinInitialize.Keyin">
+            <summary>
+            Class used for running key-ins. The key-ins
+            XML file commands.xml provides the class name and the method names.
+            </summary>
+        </member>
+        <member name="M:eZBMCE.AddinInitialize.Keyin.CommandKeyin(System.String)">
+            <summary> CommandKeyin </summary>
+            <param name="unparsed"></param>    
+        </member>
+        <member name="T:eZBMCE.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:eZBMCE.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:eZBMCE.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:eZBMCE.Properties.Resources.AppName">
+            <summary>
+              Looks up a localized string similar to eZBMCE.
+            </summary>
+        </member>
+        <member name="M:TrainingManagedEditSDKExamples.CorridorManipulator.GetTemplateDefinitionFromItl">
+            <summary> 从 itl 文件中提取某指定的横断面模板定义 </summary>
+            <returns> 以 XmlDocument 的操作为主 </returns>
+        </member>
+        <member name="F:MSDIAddin.MstnControlForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MSDIAddin.MstnControlForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MSDIAddin.MstnControlForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ManagedFenceExample.DgnElementSetToolTestZengfy.#ctor(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 构造函数  </summary>
+        </member>
+        <member name="M:ManagedFenceExample.DgnElementSetToolTestZengfy.OnInstall">
+             <summary> Called to ensure that the preferred ElemSource is satisfied.  </summary>
+            <remarks>For example, if no active fence and ElemSource is USES_FENCE_Required false will be returned and the tool install is aborted.</remarks>
+             <returns>false to disallow tool execution. </returns>
+        </member>
+        <member name="M:ManagedFenceExample.DgnElementSetToolTestZengfy.OnRestartTool">
+            <summary> 此命令必须重载 </summary>
+        </member>
+        <member name="M:ManagedFenceExample.DgnElementSetToolTestZengfy.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+            <summary> 此命令必须重载：Called for each element to allow tool to apply it's modification.  </summary>
+            <returns>SUCCESS if modify was ok and element should be replaced, deleted, or copied added to the file. 
+            ERROR to reject change or if change completely handled by tool. </returns>
+        </member>
+        <member name="M:ManagedFenceExample.DgnElementSetToolTestZengfy.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+            <summary> Called when a reset is entered. </summary>
+            <remarks>If SOURCE_Pick and no elements have been identified, the Auto-Locate reset to find the next element is called.
+            If an element is identified, reset will cycle to the next element, if there is no next element _OnReinitialize is called.
+            For SOURCE_Fence and SOURCE_Selection set _ExitTool is called.</remarks>
+            <returns>true if _ExitTool or OnReinitalize was called and tool object has been freed.</returns>
+        </member>
+        <member name="T:ManagedFenceExample.FenceByElementTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.OnPostInstall">
+                    * When the tool is install, show a prompt to user to select an element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * If the data point lies on an element, define a fence and exit the tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+                    * No modification is required so return Error.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.OnRestartTool">
+                    * Restart tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByElementTool.InstallNewInstance">
+                    * Static method to be called from AddIn class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedFenceExample.FenceByPointsTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnPostInstall">
+                    * When the tool is install, show a prompt to user to enter some points.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Reset to complete Fence creation.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Collect data points
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnDynamicFrame(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Show dynamics to the user how the fence will look like
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+                    * No modification is required so return Error.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.OnRestartTool">
+                    * Restart tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedFenceExample.FenceByPointsTool.InstallNewInstance">
+                    * Static method to be called from AddIn class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedToolsExample.GroupedHoleHelper">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.GroupedHoleHelper.CreateShapeElement(Bentley.DgnPlatformNET.DgnModel,Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d)">
+                    * Calculates points from start and opposite points and creates a shape
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.GroupedHoleHelper.PopulateHolesAgenda(Bentley.DgnPlatformNET.ElementAgenda@,Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d,Bentley.DgnPlatformNET.DgnModel)">
+                    * Calculates start and opposite points of holes and creates them.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.OnRestartTool">
+                    * Restart tool
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.InstallNewInstance(eZBMCE.AddinManager.DocumentModifier)">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedToolsExample.PlaceGroupedHoleForm">
+            * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.#ctor">
+            * Constructor
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.GetAddFillColor">
+            * Whether to add fill color or not.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.GetNumberOfHoles">
+            * Returns number of holes selected by the user.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.CmbNoOfHoles_SelectedIndexChanged(System.Object,System.EventArgs)">
+            * Set number of holes from user latest selection.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.ChkAddFill_CheckedChanged(System.Object,System.EventArgs)">
+            * Add fill color or not.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:ManagedToolsExample.PlaceGroupedHoleForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ManagedToolsExample.PlaceGroupedHoleTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.#ctor(eZBMCE.AddinManager.DocumentModifier,System.Int32,System.Int32)">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnRestartTool">
+                    * Restart tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.ExitTool">
+                    * Exit tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnPostInstall">
+                    * Enable snapping.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Get start and opposite points from data buttons in this method.
+            /// Start dynamics on first data point.
+            /// Place the grouped hole on second data point.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnDynamicFrame(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Temporarly show how the element will look like.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Restart the tool on reset.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.InstallNewInstance(eZBMCE.AddinManager.DocumentModifier)">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:Hello.PCForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Hello.PCForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Hello.PCForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

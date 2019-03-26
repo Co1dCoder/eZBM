@@ -1,0 +1,7 @@
+D:\GithubProjects\eZBM\AddinManagerTest\bin\AddinManagerTest.dll
+D:\GithubProjects\eZBM\AddinManagerTest\bin\AddinManagerTest.pdb
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest\obj\Debug\AddinManagerTest.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest\obj\Debug\AddinManagerTest.Form1.resources
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest\obj\Debug\AddinManagerTest.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest\obj\Debug\AddinManagerTest.dll
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest\obj\Debug\AddinManagerTest.pdb

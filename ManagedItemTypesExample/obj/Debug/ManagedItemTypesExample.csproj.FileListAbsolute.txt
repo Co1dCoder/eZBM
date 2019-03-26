@@ -1,0 +1,8 @@
+D:\GitHubProjects\eZBM\bin\ManagedItemTypesExample.XML
+D:\GitHubProjects\eZBM\bin\ManagedItemTypesExample.dll
+D:\GitHubProjects\eZBM\bin\ManagedItemTypesExample.pdb
+D:\GitHubProjects\eZBM\ManagedItemTypesExample\obj\Debug\ManagedItemTypesExample.MainForm.resources
+D:\GitHubProjects\eZBM\ManagedItemTypesExample\obj\Debug\ManagedItemTypesExample.csproj.GenerateResource.Cache
+D:\GitHubProjects\eZBM\ManagedItemTypesExample\obj\Debug\ManagedItemTypesExample.dll
+D:\GitHubProjects\eZBM\ManagedItemTypesExample\obj\Debug\ManagedItemTypesExample.pdb
+D:\GitHubProjects\eZBM\ManagedItemTypesExample\obj\Debug\ManagedItemTypesExample.csprojResolveAssemblyReference.cache

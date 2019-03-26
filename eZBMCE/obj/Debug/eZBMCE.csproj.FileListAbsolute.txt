@@ -1,0 +1,14 @@
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.Properties.Resources.resources
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.csproj.GenerateResource.Cache
+D:\GitHubProjects\eZBM\bin\eZBMCE.XML
+D:\GitHubProjects\eZBM\bin\eZBMCE.dll.config
+D:\GitHubProjects\eZBM\bin\eZBMCE.dll
+D:\GitHubProjects\eZBM\bin\eZBMCE.pdb
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.dll
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.pdb
+D:\GitHubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.SnoopObjects.Form_ObjectProperties.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\ManagedToolsExample.PlaceGroupedHoleForm.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\Hello.PCForm.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.Debug.Form1.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\MSDIAddin.MstnControlForm.resources

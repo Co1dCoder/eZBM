@@ -1,0 +1,77 @@
+#--------------------------------------------------------------------------------------
+#
+#     $Source: MstnExamples/Annotations/ManagedItemTypesExample/ManagedItemTypesExample.mke $
+#
+#  $Copyright: (c) 2015 Bentley Systems, Incorporated. All rights reserved. $
+#
+#--------------------------------------------------------------------------------------
+
+DemoSrcDir   = $(_MakeFilePath)
+PolicyFile = MicroStationPolicy.mki
+appName    = ManagedItemTypesExample
+MDLMKI = $(MSMDE)mki/
+
+#--------------------------------------------------------------------------------------------------
+#  Includes
+#--------------------------------------------------------------------------------------------------
+%include $(MDLMKI)mdl.mki
+
+#%if !defined (BUILD_USING_VS2008)
+    SlnFile=$(_MakeFilePath)ManagedItemTypesExample.sln
+    #UseEnvOpt=
+#%else
+    # the useenv option seems to be required in some cases in VS2008
+    #SlnFile=$(_MakeFilePath)ManagedItemTypesExample.sln
+    #UseEnvOpt=-useenv
+#%endif
+
+%if $(TARGET_PROCESSOR_ARCHITECTURE)=="x64"
+    Platform = x64
+    OutSubDir = Winx64
+%else
+    Platform = x86
+    OutSubDir = Winx86
+%endif
+
+o = $(ManagedItemTypesExampleBuildDir_)
+
+%if $(TARGET_PROCESSOR_ARCHITECTURE)=="x64"
+    OutSubDir = Winx64
+%else
+    OutSubDir = Winx86
+%endif
+
+#ManagedItemTypesExampleProductDir = $(OutputRootDir)Product/Mstn/MicroStation/
+always:
+    | ************************************************
+    | * SlnFile = $(SlnFile)
+    | ************************************************
+
+buildConfiguration = "$(Configuration)|$(Platform)"
+
+always:
+    | ************************************************
+    | * Processing ManagedItemTypesExampleDemo ...
+    | * BuildConfiguration=$(buildConfiguration)
+    | * ProductDir= $(MS)
+    | ************************************************
+
+#--------------------------------------------------------------------------------------------------
+#  Compile
+#--------------------------------------------------------------------------------------------------
+%if defined(BMAKE_DELETE_ALL_TARGETS)
+    Clean:
+        devenv "$(SlnFile)" \/clean $(buildConfiguration)
+
+%else
+
+    %if defined (BMAKE_BUILD_ALL)
+        BuildOp = \/rebuild
+    %else
+        BuildOp = \/build
+    %endif
+
+    BuildOrRebuild:
+        devenv "$(SlnFile)" $(BuildOp) $(buildConfiguration) # $(UseEnvOpt)
+
+%endif

@@ -1,0 +1,70 @@
+#--------------------------------------------------------------------------------------
+#
+#     $Source: MstnExamples/Constraints/ParametricModelingExample/ParametricModelingExample.mke $
+#
+#  $Copyright: (c) 2015 Bentley Systems, Incorporated. All rights reserved. $
+#
+#--------------------------------------------------------------------------------------
+
+DemoSrcDir   = $(_MakeFilePath)
+PolicyFile = MicroStationPolicy.mki
+appName    = ParametricModelingExample
+MDLMKI = $(MSMDE)mki/
+
+#--------------------------------------------------------------------------------------------------
+#  Includes
+#--------------------------------------------------------------------------------------------------
+%include $(MDLMKI)mdl.mki
+
+SlnFile=$(_MakeFilePath)ParametricModelingExample.sln
+
+%if $(TARGET_PROCESSOR_ARCHITECTURE)=="x64"
+    Platform = x64
+    OutSubDir = Winx64
+%else
+    Platform = x86
+    OutSubDir = Winx86
+%endif
+
+o = $(ParametricModelingExampleBuildDir_)
+
+%if $(TARGET_PROCESSOR_ARCHITECTURE)=="x64"
+    OutSubDir = Winx64
+%else
+    OutSubDir = Winx86
+%endif
+
+#ParametricModelingExampleProductDir = $(OutputRootDir)Product/Mstn/MicroStation/
+always:
+    | ************************************************
+    | * SlnFile = $(SlnFile)
+    | ************************************************
+
+buildConfiguration = "$(Configuration)|$(Platform)"
+
+always:
+    | ************************************************
+    | * Processing ParametricModelingExample ...
+    | * BuildConfiguration=$(buildConfiguration)
+    | * ProductDir= $(MS)
+    | ************************************************
+
+#--------------------------------------------------------------------------------------------------
+#  Compile
+#--------------------------------------------------------------------------------------------------
+%if defined(BMAKE_DELETE_ALL_TARGETS)
+    Clean:
+        devenv "$(SlnFile)" \/clean $(buildConfiguration)
+
+%else
+
+    %if defined (BMAKE_BUILD_ALL)
+        BuildOp = \/rebuild
+    %else
+        BuildOp = \/build
+    %endif
+
+    BuildOrRebuild:
+        devenv "$(SlnFile)" $(BuildOp) $(buildConfiguration) # $(UseEnvOpt)
+
+%endif

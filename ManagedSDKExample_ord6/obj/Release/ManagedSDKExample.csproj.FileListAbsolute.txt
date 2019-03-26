@@ -1,0 +1,22 @@
+e:\Builds\orsdk10060038\Output\Winx64\Product\ORD_SDKStation\ORD_SDKStation\mdlapps\ManagedSDKExample.dll
+e:\Builds\orsdk10060038\Output\Winx64\Product\ORD_SDKStation\ORD_SDKStation\mdlapps\ManagedSDKExample.pdb
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.csprojResolveAssemblyReference.cache
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.FeatureForm.resources
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.PIForm.resources
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.ProfileForm.resources
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.ReportResultsForm.resources
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.XSCutPointForm.resources
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.csproj.GenerateResource.Cache
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.dll
+e:\Builds\orsdk10060038\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Release\ManagedSDKExample.pdb
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.dll
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.pdb
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.csprojResolveAssemblyReference.cache
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.FeatureForm.resources
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.PIForm.resources
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.ProfileForm.resources
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.ReportResultsForm.resources
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.Utility.XSCutPointForm.resources
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.csproj.GenerateResource.Cache
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.dll
+C:\Program Files\Bentley\OpenRoadsDesignerCONNECTSDK\examples\ManagedSDKExample\obj\Release\ManagedSDKExample.pdb

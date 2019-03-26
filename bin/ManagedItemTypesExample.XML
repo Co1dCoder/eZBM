@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ManagedItemTypesExample</name>
+    </assembly>
+    <members>
+        <member name="T:ManagedItemTypesExample.ItemTypesHelper">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.GetItemTypeLibarayByName(System.String)">
+                    * Get ItemTypeLibrary by name.
+            /// ItemTypeLibrary implements IDisposable. The caller of this method is responsible for disposing this object.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewLibrary(System.String,System.String@)">
+                    * Creates New ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeleteLibrary(System.String)">
+                    * Deletes ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewItemType(System.String,System.String,System.String@,System.UInt32@)">
+                    * Creates New ItemType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeleteItemType(System.String,System.UInt32)">
+                    * Deletes ItemType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewCustomPropertyType(System.String,System.String,System.String@,System.UInt32@)">
+                    * Creates New CustomPropertyType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeleteCustomPropertyType(System.String,System.UInt32)">
+                    * Deletes CustomPropertyType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewPropertyDefinition(Bentley.DgnPlatformNET.ItemTypeLibrary,Bentley.DgnPlatformNET.CustomPropertyContainer,System.String,Bentley.DgnPlatformNET.CustomProperty.TypeKind,System.Boolean,System.Object)">
+                    * Creates a new property definition for an ItemType or CustomType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewItemTypePropertyDefinition(Bentley.DgnPlatformNET.ItemTypeLibrary,System.UInt32,System.String,Bentley.DgnPlatformNET.CustomProperty.TypeKind,System.Boolean,System.Object)">
+                    * Creates a new property definition for an ItemType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.CreateNewCustomTypePropertyDefinition(Bentley.DgnPlatformNET.ItemTypeLibrary,System.UInt32,System.String,Bentley.DgnPlatformNET.CustomProperty.TypeKind,System.Boolean,System.Object)">
+                    * Creates a new property definition for a Custom Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeletePropertyDefinition(Bentley.DgnPlatformNET.ItemTypeLibrary,Bentley.DgnPlatformNET.CustomPropertyContainer,System.String)">
+                    * Deletes the selected property definition from an ItemType or a CustomType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeleteItemTypePropertyDefinition(System.String,System.UInt32,System.String)">
+                    * Deletes the selected property definition from an ItemType.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ItemTypesHelper.DeleteCustomTypePropertyDefinition(System.String,System.UInt32,System.String)">
+                    * Deletes the selected property definition from a Custom Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedItemTypesExample.MainForm">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.#ctor">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.LoadItemTypes">
+                    * Loads all ItemType Libararies from file.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.LstItemTypesLibraries_SelectedIndexChanged(System.Object,System.EventArgs)">
+                    * Reads all Item Types from the selected ItemTypeLibarary and lists them in the Item Types List.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.LstItemTypes_SelectedIndexChanged(System.Object,System.EventArgs)">
+                    * Reads all Property Definitions from the selected ItemType and lists them in the Property Definitions List.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.LstCustomTypes_SelectedIndexChanged(System.Object,System.EventArgs)">
+                    * Reads all Property Definitions from the selected CustomPropertyType and lists them in the Property Definitions List.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.ListPropertyDefinitionsForType(Bentley.DgnPlatformNET.CustomPropertyContainer)">
+                    * Reads all Property Definitions from the selected CustomPropertyType/ItemType and lists them in the Property Definitions List.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnCreateLibrary_Click(System.Object,System.EventArgs)">
+                    * Creates a new ItemTypeLibrary and writes it to file.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDeleteLibrary_Click(System.Object,System.EventArgs)">
+                    * Deletes the selected ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnCreateItemType_Click(System.Object,System.EventArgs)">
+                    * Creates a new ItemType in the selected ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDeleteItemType_Click(System.Object,System.EventArgs)">
+                    * Deletes the selected ItemType from the selected ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnCreateCustomType_Click(System.Object,System.EventArgs)">
+                    * Creates a new CustomType in the selected ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDeleteCustomType_Click(System.Object,System.EventArgs)">
+                    * Deletes the selected CusotmType from the selected ItemTypeLibrary.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnPlaceLine_Click(System.Object,System.EventArgs)">
+                    * Places a line element for attaching/detaching ItemTypes.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnAttachItemType_Click(System.Object,System.EventArgs)">
+                    * Attaches the selected item type from the line element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.AddAttachedItemTypeToList(System.String,System.String)">
+                    * Adds attached ItemType to the list of attached ItemTypes.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDetachItemType_Click(System.Object,System.EventArgs)">
+                    * Detaches selected item type from the line element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDetachAllItemTypes_Click(System.Object,System.EventArgs)">
+                    * Detaches all item types from the line element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.CreatePropertyDefinition(System.UInt32,System.Boolean)">
+                    * Creates a new property definition and adds it to the selected Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.AddCustomPropertyDefinitionToList(Bentley.DgnPlatformNET.CustomProperty)">
+                    * Adds custom property to the list view.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.GetTypeKind">
+                    * Returns TypeKind based on ComboBox selection.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnCreatePropertyDefinition_Click(System.Object,System.EventArgs)">
+                    * Creates a new property definition and adds it to the selected Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.DeletePropertyDefinition(System.UInt32,System.Boolean)">
+                    * Deletes the selected property definition from the selected Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.BtnDeletePropertyDefinition_Click(System.Object,System.EventArgs)">
+                    * Deletes the selected property definition from the selected Type.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:ManagedItemTypesExample.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ManagedItemTypesExample.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ManagedItemTypesExample.ListBoxItemType">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="T:ManagedItemTypesExample.ManagedItemTypesExample">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedItemTypesExample.ManagedItemTypesExample.#ctor(System.IntPtr)">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ManagedItemTypesExample.GetActiveDgnFile">
+                    * Returns active DgnFile.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ManagedItemTypesExample.GetActiveDgnModel">
+                    * Returns active DgnModel.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedItemTypesExample.ManagedItemTypesExample.Run(System.String[])">
+                    * Required Run method of AddIn class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+    </members>
+</doc>

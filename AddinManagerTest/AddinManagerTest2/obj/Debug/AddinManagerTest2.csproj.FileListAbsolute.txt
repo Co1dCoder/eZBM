@@ -1,0 +1,4 @@
+D:\GithubProjects\eZBM\AddinManagerTest\bin\AddinManagerTest2.dll
+D:\GithubProjects\eZBM\AddinManagerTest\bin\AddinManagerTest2.pdb
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest2\obj\Debug\AddinManagerTest2.dll
+D:\GithubProjects\eZBM\AddinManagerTest\AddinManagerTest2\obj\Debug\AddinManagerTest2.pdb

@@ -1,0 +1,9 @@
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.XML
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.dll
+D:\GithubProjects\eZBM\bin\ManagedToolsExample.pdb
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.TestModifyEdgeToolForm.resources
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.PlaceGroupedHoleForm.resources
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.dll
+D:\GithubProjects\eZBM\ManagedToolsExample\obj\Debug\ManagedToolsExample.pdb

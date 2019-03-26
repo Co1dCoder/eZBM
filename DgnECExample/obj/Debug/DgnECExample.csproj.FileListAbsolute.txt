@@ -1,0 +1,11 @@
+D:\GitHubProjects\eZBM\bin\DgnECExample.XML
+D:\GitHubProjects\eZBM\bin\DgnECExample.dll
+D:\GitHubProjects\eZBM\bin\DgnECExample.pdb
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.CreateAndImportSchemaForm.resources
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.FindInstancesOnElementForm.resources
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.WriteInstanceForm.resources
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.SchemaListForm.resources
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.csproj.GenerateResource.Cache
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.dll
+D:\GitHubProjects\eZBM\DgnECExample\obj\Debug\DgnECExample.pdb

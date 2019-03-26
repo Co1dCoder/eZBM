@@ -1,0 +1,14 @@
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.dll
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.pdb
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample_ord6.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.Utility.FeatureForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.Utility.PIForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.Utility.ProfileForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.ReportResultsForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.Utility.XSCutPointForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample_ord6.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.dll
+D:\GithubProjects\eZBM\ManagedSDKExample_ord6\obj\Debug\ManagedSDKExample.pdb
+D:\GithubProjects\eZBM\bin\ManagedSDKExample.XML
+D:\GithubProjects\eZBM\bin\ManagedSDKExample.dll
+D:\GithubProjects\eZBM\bin\ManagedSDKExample.pdb

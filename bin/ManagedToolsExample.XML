@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ManagedToolsExample</name>
+    </assembly>
+    <members>
+        <member name="T:ManagedToolsExample.GroupedHoleHelper">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.GroupedHoleHelper.CreateShapeElement(Bentley.DgnPlatformNET.DgnModel,Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d)">
+                    * Calculates points from start and opposite points and creates a shape
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.GroupedHoleHelper.PopulateHolesAgenda(Bentley.DgnPlatformNET.ElementAgenda@,Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d,Bentley.DgnPlatformNET.DgnModel)">
+                    * Calculates start and opposite points of holes and creates them.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.GroupedHoleHelper.CreateElement(Bentley.GeometryNET.DPoint3d,Bentley.GeometryNET.DPoint3d)">
+                    * Create Grouped hole element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedToolsExample.Keyin">
+            <author>BentleySystems</author>
+        </member>
+        <member name="M:ManagedToolsExample.Keyin.CmdStartPlaceGroupedHoleTool(System.String)">
+            <summary>Keyin to function mapping.
+            Calls ManagedToolsExample.StartPlaceGroupedHoleTool to start place tool</summary>
+            <author>BentleySystems</author>
+        </member>
+        <member name="M:ManagedToolsExample.Keyin.CmdModifyPlaceGroupedHoleTool(System.String)">
+            <summary>Keyin to function mapping.
+            Calls ManagedToolsExample.StartModifyGroupedHoleTool to start modify tool</summary>
+            <author>BentleySystems</author>
+        </member>
+        <member name="M:ManagedToolsExample.Keyin.CmdStartBlendTool(System.String)">
+            <summary>Keyin to function mapping.
+            Calls ManagedToolsExample.StartPlaceGroupedHoleTool to start place tool</summary>
+            <author>BentleySystems</author>
+        </member>
+        <member name="F:ManagedToolsExample.TestModifyEdgeToolForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ManagedToolsExample.TestModifyEdgeToolForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ManagedToolsExample.TestModifyEdgeToolForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ManagedToolsExample.ManagedToolsExample">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.#ctor(System.IntPtr)">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.Run(System.String[])">
+                    * Required Run method of AddIn class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.Instance">
+                    * Returns an instance of the Addin class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.StartPlaceGroupedHoleTool">
+                    * Starts place grouped hole element tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.StartModifyGroupedHoleTool">
+                    * Starts modify grouped hole element tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ManagedToolsExample.StartBlendTool(System.Int32)">
+                    * Starts place grouped hole element tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedToolsExample.ModifyGroupedHoleTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.#ctor">
+                    * Constructor
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Actual modification on first data button if it lies on GroupedHole element.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.OnElementModify(Bentley.DgnPlatformNET.Elements.Element)">
+                    * All modification is done in OnDataButton method, just return Error from this method.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.OnRestartTool">
+                    * Restart tool
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.ModifyGroupedHoleTool.InstallNewInstance">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="T:ManagedToolsExample.PlaceGroupedHoleForm">
+            * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.#ctor">
+            * Constructor
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.GetAddFillColor">
+            * Whether to add fill color or not.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.GetNumberOfHoles">
+            * Returns number of holes selected by the user.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.CmbNoOfHoles_SelectedIndexChanged(System.Object,System.EventArgs)">
+            * Set number of holes from user latest selection.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.ChkAddFill_CheckedChanged(System.Object,System.EventArgs)">
+            * Add fill color or not.
+            * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="F:ManagedToolsExample.PlaceGroupedHoleForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ManagedToolsExample.PlaceGroupedHoleTool">
+                * @bsiclass                                                               Bentley Systems
+            +===============+===============+===============+===============+===============+======
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.#ctor(System.Int32,System.Int32)">
+                    * Constructor.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnRestartTool">
+                    * Restart tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.ExitTool">
+                    * Exit tool.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnPostInstall">
+                    * Enable snapping.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Get start and opposite points from data buttons in this method.
+            /// Start dynamics on first data point.
+            /// Place the grouped hole on second data point.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnDynamicFrame(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Temporarly show how the element will look like.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.OnResetButton(Bentley.DgnPlatformNET.DgnButtonEvent)">
+                    * Restart the tool on reset.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+        <member name="M:ManagedToolsExample.PlaceGroupedHoleTool.InstallNewInstance">
+                    * Static method to initialize this tool from any class.
+                    * @bsimethod                                                              Bentley Systems
+            /*--------------+---------------+---------------+---------------+---------------+------
+        </member>
+    </members>
+</doc>
