@@ -1,0 +1,18 @@
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.dll
+D:\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\mdlapps\ManagedSDKExample.pdb
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample_ord7.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.CivilCellTreeForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.CurveWideningPlaceForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.FeatureForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.SuperElevationAssignForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.SuperElevationPlaceForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.TemplatePickForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.PIForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.ProfileForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.ReportResultsForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.Utility.XSCutPointForm.resources
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample_ord7.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.dll
+D:\GithubProjects\eZBM\ManagedSDKExample_ord7\obj\Debug\ManagedSDKExample.pdb
+D:\GithubProjects\eZBM\bin\ManagedSDKExample.dll
+D:\GithubProjects\eZBM\bin\ManagedSDKExample.pdb

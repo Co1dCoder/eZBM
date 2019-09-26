@@ -58,35 +58,17 @@ namespace eZBMCE.Debug
 
         private DocumentModifier _docMdf;
 
-        //private class myDimensionCreateData : DimensionCreateData
-        //{
-        //    public myDimensionCreateData() { }
-
-        //    public override DMatrix3d GetDimensionRotation()
-        //    {
-        //        return
-        //    }
-        //    public DimensionStyle GetDimensionStyle();
-        //    public DirectionFormatter GetDirectionFormatter();
-        //    public LevelId GetLevelId();
-        //    public Symbology GetSymbology();
-        //    public DgnTextStyle GetTextStyle();
-        //    public int GetViewNumber();
-        //    public DMatrix3d GetViewRotation();
-        //}
-        //}
-
         /// <summary> 计算选择的所有曲线的面积与长度之和 </summary>
         public AddinManagerDebuger.ExternalCmdResult TestDimension(DocumentModifier docMdf)
         {
             _docMdf = docMdf;
             // Add your code here
-      
+
             return AddinManagerDebuger.ExternalCmdResult.Commit;
         }
 
         #region --- 界面操作
-        class CreateDimensionCallbacks : DimensionCreateData
+        public class CreateDimensionCallbacks : DimensionCreateData
         {
             private DimensionStyle m_dimStyle;
             private DgnTextStyle m_textStyle;
@@ -164,7 +146,11 @@ namespace eZBMCE.Debug
                 if (oDim.IsValid)
                 {
                     DPoint3d pt = new DPoint3d(0, -17 * uorPerMast, 0);
-                    oDim.InsertPoint(pt, null, dimStyle, -1);
+
+                    AssociativePoint associativePoint = new AssociativePoint();
+                    associativePoint = null;
+
+                    oDim.InsertPoint(pt, associativePoint, dimStyle, -1);
                     pt.X += 3 * uorPerMast;
                     oDim.InsertPoint(pt, null, dimStyle, -1);
                     oDim.SetHeight(uorPerMast);

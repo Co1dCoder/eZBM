@@ -4,20 +4,616 @@
         <name>eZBMCE</name>
     </assembly>
     <members>
-        <member name="T:eZBMCE.Debug.Cif.CifTest">
+        <member name="F:eZBMCE.Addins.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:eZBMCE.Addins.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:eZBMCE.Addins.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:eZBMCE.Addins.SnoopObjects.EcSnoopObjects">
             <summary> 计算选择的所有曲线的面积与长度之和 </summary>
         </member>
-        <member name="F:eZBMCE.Debug.Cif.CifTest.CommandName">
+        <member name="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName">
             <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
         </member>
-        <member name="M:eZBMCE.Debug.Cif.CifTest.CifFastDebug">
-            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Debug.Cif.CifTest.CommandName"/>相同</summary>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName"/>相同</summary>
         </member>
-        <member name="M:eZBMCE.Debug.Cif.CifTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
             <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
         </member>
-        <member name="M:eZBMCE.Debug.Cif.CifTest.CifFastDebug(eZBMCE.AddinManager.DocumentModifier)">
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> <seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandDescription"/> </summary>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CheckProductType">
+            <summary> 当前运行的程序 </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.TryConvertMSElementToORDElement(Bentley.CifNET.SDK.ConsensusConnection,Bentley.DgnPlatformNET.Elements.Element[])">
+            <summary>
+            尝试将MS中的元素转换为ORD中的元素
+            </summary>
+            <param name="sdkCon"></param>
+            <param name="objs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:eZBMCE.Utilities.ExtensionMethods">
+            <summary> 扩展函数 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToArray(Bentley.Interop.MicroStationDGN.ElementEnumerator)">
+            <summary>  </summary>
+            <param name="elements"><seealso cref="T:Bentley.Interop.MicroStationDGN.Element"/>集合</param>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToElementHandle(Bentley.DgnPlatformNET.Elements.Element)">
+            <summary> C# Element  转换为 ElemHandle 指针 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsInteropElement(Bentley.DgnPlatformNET.Elements.Element,Bentley.Interop.MicroStationDGN.ModelReference)">
+            <summary> COM Element 与 Native Element 的相互转换 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsNativeElement(Bentley.Interop.MicroStationDGN.Element,Bentley.DgnPlatformNET.DgnModel)">
+            <summary> COM Element 与 Native Element 的相互转换 </summary>
+        </member>
+        <member name="T:eZBMCE.Utilities.Selector">
+            <summary> 界面中的元素选择器 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Selector.SelectSingleElement``1">
+            <summary> 在界面中选择一个单一元素 </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlWindow_viewWindowGet(System.Int64)">
+            <summary>
+            通过视图取得对应的MSWindow句柄
+            </summary>
+            <param name="viewNum">视图编号，0对应视图1，7对应视图8</param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlView_fitViewToRange(Bentley.GeometryNET.DPoint3d@,Bentley.GeometryNET.DPoint3d@,eZBMCE.Utilities.MDLFunctions.FitViewOptions,System.Int64)">
+            <summary>
+            Fit the contents of the specified range in the given view. 
+            </summary>
+            <param name="minP">the minimum X Y and Z values of the range </param>
+            <param name="maxP">the maximum X Y and Z values of the range </param>
+            <param name="optionP">the FitViewOptions to apply to the view when it is redrawn </param>
+            <param name="viewIndex">the index of the view to fit the specified range block in.
+            viewIndex在编程时是以0为基准的，也就是说，viewIndex = 0代表的是“视图1”（MicroStation中最多有8个视图） </param>
+            <returns>StatusInt:SUCCESS if the view is redrawn without error.  </returns>
+            <remarks>Range points need to be in the view coordinate system, see mdlRMatrix_multiplyRange. 
+            Unlike many other view functions, this function expects points in design file coordinates, so apply the currtrans via mdlCurrTrans_transformPointArray.
+            </remarks>
+        </member>
+        <member name="T:eZBMCE.Utilities.MDLFunctions.FitViewOptions">
+            <summary>
+            Options control structure for fitting views. 
+            </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.forceActiveZToCenter">
+            <summary> make ActiveZ go to center of view volume </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.expandClippingPlanes">
+            <summary> move front and back planes out as needed </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.disableCenterCamera">
+            <summary> disableCenterCamera whether fit view re-centers the camera </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreTransients">
+            <summary> ignoreTransients whether transient elements should be included in fit range </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.dontIncludeParentsOfNestedRefs">
+            <summary> dontIncludeParentsOfNestedRefs  if true, do only modelRefs in fitList, and not the parent references </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreCallouts">
+            <summary> ignoreCallouts  if true, callouts will be ignored </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding">
+            <summary> optionPadding  reserved </summary>
+        </member>
+        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding2">
+            <summary> optionPadding2 reserved </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlElement_extractRange(System.Int64@,System.Int64)">
+            <summary>
+            Extract your element's range (two points: low left bottom point + high right top point). 
+            Used to extract the range from an element. The range is transformed by the current transform if one exists. 
+            </summary>
+            <param name="rangeP">out: rangeP is the element range of type DVector3d*.  </param>
+            <param name="pElement">is the input element</param>
+            <returns>SUCCESS if the element range is extracted successfully - an appropriate error code otherwise. </returns>
+        </member>
+        <member name="T:eZBMCE.Utilities.Utils">
+            <summary> 一些常用的静态方式，用来辅助开发 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.TryGetElement``1">
+            <summary> 从当前界面中的选择集中提取指定类型的对象 </summary>
+            <returns>如果未选择指定类型的对象，则返回null</returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetSelection">
+            <summary> 获取当前选择集（Net） </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetSelection(Bentley.Interop.MicroStationDGN.Application)">
+            <summary> 获取当前选择集（Interop） </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.ShowElementProperties(Bentley.DgnPlatformNET.Elements.Element)">
+            <summary> 显示某Element的属性 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.GetDefinitionModel(System.String,System.Boolean)">
+            <summary> Get definiton model. </summary>
+            <param name="modelName">Definition model name. 如果输入null，则返回当前活动的DgnModel </param>
+            <param name="createIfNotFound">Create a new definition model if the model does not exist.</param>
+            <returns>Returns definition model.</returns>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.UpdateView(System.Int32)">
+            <summary> 刷新视口显示 </summary>
+        </member>
+        <member name="M:eZBMCE.Utilities.Utils.FitView(System.Int32)">
+            <summary> 视口匹配对象 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.INamedNodesInTemplate.OriginalName">
+            <summary> 在itl文件中原本存储的节点名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.INamedNodesInTemplate.BaseName">
+            <summary> 在itl文件中原本存储的节点名称，移除其左右侧方向的后缀后的基准名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.INamedNodesInTemplate.TargetName">
+            <summary> 在基准名称的基础上，修改后的新名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplatePoint.OriginalName">
+            <summary> 在itl文件中原本存储的节点名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplatePoint.BaseName">
+            <summary> 在itl文件中原本存储的节点名称，移除其左右侧方向的后缀后的基准名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplatePoint.TargetName">
+            <summary> 在基准名称的基础上，修改后的新名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateComponent.OriginalName">
+            <summary> 在itl文件中原本存储的节点名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateComponent.BaseName">
+            <summary> 在itl文件中原本存储的节点名称，移除其左右侧方向的后缀后的基准名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateComponent.TargetName">
+            <summary> 在基准名称的基础上，修改后的新名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateDisplayRule.OriginalName">
+            <summary> 在itl文件中原本存储的节点名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateDisplayRule.BaseName">
+            <summary> 在itl文件中原本存储的节点名称，移除其左右侧方向的后缀后的基准名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateDisplayRule.TargetName">
+            <summary> 在基准名称的基础上，修改后的新名称 </summary>
+        </member>
+        <member name="P:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.TemplateLibDoc">
+            <summary> 横断面模板对应的 xml 文档 </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer._sideTemplates">
+            <summary> 横断面模板文件中的左/右侧模板 </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer._templateBaseName">
+            <summary> 基准模板的名称（不含左右侧信息） </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer._baseTemplateElement">
+            <summary> 基准模板节点 </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer._categoryNode">
+            <summary> 指定的横断面模板节点所对应的父节点，Category </summary>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.ListTemplates(System.Xml.XmlDocument,System.Windows.Forms.TreeView)">
+            <summary> 将横断面模板中的内容加载到 TreeView 控件中 </summary>
+            <param name="templateLibDoc"></param>
+            <param name="treeView"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.ListCategory(System.Xml.XmlElement)">
+            <summary> 将横断面模板中的内容加载到 TreeView 控件中 </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.DrawElementInTreeView(System.Xml.XmlElement)">
+            <summary> 针对节点的具体信息作出响应操作 </summary>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.RefreshTreeFromChild(System.Xml.XmlElement,System.Windows.Forms.TreeNode)">
+            <summary>
+            刷新 Treeview 与 xml 的绑定关系
+            </summary>
+            <param name="parentNd"> 要刷新的文件夹 </param>
+            <param name="templateToSelect"></param>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.SwitchTemplateDirection(System.Xml.XmlElement,System.Boolean,System.Xml.XmlElement@)">
+            <summary> 转换某个横断面模板的左右方向 </summary>
+            <param name="templateToSwitch"></param>
+            <param name="toLeft"></param>
+            <param name="templateNodeToHandle"></param>
+            <returns></returns>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.TreeNodeTag.IsCategory">
+            <summary> true表示是文件夹，false 表示是 Template </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.TreeNodeTag.IsSideTemplate">
+            <summary> true表示是路基左侧，false 表示是 路基右侧 </summary>
+        </member>
+        <member name="F:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.name">
+            <summary> 组件名称 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.oid">
+            <summary> id值，比如"{D0DFCC90-42BD-4A02-9D5B-CF5EFF9A9BDA}"，多个模板之间的id值有重复时，仍然可以使用（当然最好不要重复） </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.dragPoint">
+            <summary>  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.description">
+            <summary>  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.translationDX">
+            <summary>  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Template.translationDY">
+            <summary>  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.name">
+            <summary> 组件名称 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.nameOverride">
+            <summary> Use Name Override，没有特征名称覆盖的话，则为"" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.type">
+            <summary> 组件的类型，如""EndCondition"" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.material">
+            <summary> 组件的特征定义，如""TC_Draft-DNC"" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.materialPath">
+            <summary> 组件的特征定义所对应的路径（文件夹），如"Mesh\DNC\" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.displayExpression">
+            <summary> 对应的显示规则，比如 "NOT 边坡填方判断_L " </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.description">
+            <summary> </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.isClosed">
+            <summary> 是否为封闭组件 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.isVoid">
+            <summary> true或false，表示是否为空心组件 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.voidType">
+            <summary> 非 void 则为 "None"  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateComponent.node_Vertex">
+            <summary> 组件下的“顶点”节点的名称 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateEndConditionTarget">
+            <summary> 末端组件目标 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateEndConditionTarget.targetType">
+            <summary> 末端组件目标对象类型，比如"Surface" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateEndConditionTarget.targetName">
+            <summary> 末端组件目标对象的名称，没有则为"" </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateVertex">
+            <summary> 组件上的顶点 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateVertex.name">
+            <summary> 组件上顶点的名称 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplateVertex.filletTangentLength">
+            <summary> 顶点所对应的圆角,比如"0.5"表示半径为0.5m的圆角，无圆角则为"0.00000000" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.name">
+            <summary> 点名称 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.featureName">
+            <summary> Feature Name Override，没有特征名称覆盖的话，则为"" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.style">
+            <summary> 点的特征定义名称，如"TL_End Cond Cut Tie" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.stylePath">
+            <summary> 点的特征定义所对应的路径（文件夹），如"Linear\Template Points\Grading\"  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.x">
+            <summary> 点在模板中计算得到的x坐标，
+            zengfy推测：如果点指定的两个约束，则此处记录的x或y值最终是不会生效的，如果只有一个或者没有约束，是点的定位才会与此x或y相关 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_TemplatePoint.y">
+            <summary> 点在模板中计算得到的y坐标 
+            zengfy推测：如果点指定的两个约束，则此处记录的x或y值最终是不会生效的，如果只有一个或者没有约束，是点的定位才会与此x或y相关 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint">
+            <summary> 点的约束信息  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint.type">
+            <summary> 约束类型，无约束时为"None",其余有Horizontal、Vertical、Vector 等 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint.value">
+            <summary> 约束的值 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint.parent">
+            <summary> 约束的 parent1 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint.parent2">
+            <summary> 有些约束类型没有 parent2，此时 XmlElement中根本就没有这一项 Attribute 的定义 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_Constraint.parametricLabel">
+            <summary> 约束类型值所对应的标签，有些约束类型没有 parametricLabel，此时 XmlElement中根本就没有这一项 Attribute 的定义 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.AttributeNames_DisplayRule">
+            <summary> 显示规则的信息  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_DisplayRule.name">
+            <summary> 显示规则的名称 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_DisplayRule.description">
+            <summary>  </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_DisplayRule.type">
+            <summary> 显示规则的类型，如 "Component Is Displayed" </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.AttributeNames_DisplayRule.point1">
+            <summary> "Component Is Displayed"时指定的组件名称 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.XmlElementTree">
+            <summary>
+            通过修改横断面模板的左右方向，以及点或组件名称后缀来切换横断面模板的左右方向
+            </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.XmlElementTree.CheckNeedKeepDigging">
+            <summary> 针对某个具体的节点，检查是否需要继续进行下一级节点的检索 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.XmlElementTree.XmlElementManipulator">
+            <summary> 针对节点的具体信息作出响应操作 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.XmlElementTree.ExpandElement(System.Xml.XmlElement,eZBMCE.Cif.TemplateLib.XmlElementTree.CheckNeedKeepDigging,eZBMCE.Cif.TemplateLib.XmlElementTree.XmlElementManipulator)">
+            <summary> 通过递归的方式将XML中的节点加载到 TreeView 控件中 </summary>
+            <param name="category"></param>
+            <param name="checkKeepDigging">针对某个具体的节点，检查是否需要继续进行下一级节点的检索</param>
+            <param name="elementManipulator">针对节点的具体信息作出响应操作</param>
+            <returns></returns>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch">
+            <summary> 通过修改横断面模板的左右方向，以及点或组件名称后缀来切换横断面模板的左右方向 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchType">
+            <summary> 方向转换操作的具体方式 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchType.UnSwitched">
+            <summary> 未进行转换 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchType.ReplacedMySelf">
+            <summary> 目标模板与选中模板同名，此时修改了自己的内容 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchType.ReplacedDuplicated">
+            <summary> 目标模板在文件夹中已经存在，此时将那个同名的模板内容进行修改 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchType.Appended">
+            <summary> 目标模板在文件夹中不存在，新增一个模板 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._isLeft">
+            <summary> 基准模板是在左侧还是在右侧 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._toLeft">
+            <summary> 目标模板是在左侧还是在右侧 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._templateBaseName">
+            <summary> 基准模板的名称（不含左右侧信息） </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._baseTemplateElement">
+            <summary> 基准模板节点 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._categoryNode">
+            <summary> 指定的横断面模板节点所对应的父节点，Category </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.#ctor(System.Xml.XmlElement,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            设置ORD中横断面模板的左右方向
+            </summary>
+            <param name="toLeft"> false表示设置为右侧模板 </param>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.IsGradeSideTemplate(System.Xml.XmlElement,System.String@)">
+            <summary> 判断此Template节点是否对应一个三维线性法中的侧边模板 </summary>
+            <param name="templateElement"></param>
+            <returns></returns>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch._handledTemplateNames">
+            <summary> 某个文件夹中已经处理过的模板的名称集合 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.RefreshSwitchPool">
+            <summary> 在开始转换前后，都需要将已经处理过的模板集合进行清空 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.GetTemplateNodeToModify(System.Xml.XmlElement@)">
+            <summary> 对指定侧的模板进行修改，或者新建一个对向侧的模板再进行修改 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchTemplatePointsDirectionByX(System.Xml.XmlNode,System.Double)">
+            <summary> 将模板中的所有点(不包括组件、显示规则）按其位置是在原点的左侧还是右侧，来对应地修改点的名称 </summary>
+            <param name="templateNode"></param>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.SwitchTemplateDirection(System.Xml.XmlNode)">
+            <summary> 将模板中的所有点、组件、显示规则都转换到某一个特定的方向，而不管其在模板中的几何定位 </summary>
+            <param name="templateNode"></param>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.AppendDirectionSuffix(System.String,System.String)">
+            <summary> 根据基准名与左右侧方向，设置最终的左右后缀 </summary>
+            <param name="baseName"></param>
+            <param name="directionSuff"></param>
+            <returns>输入字符类似 "_Liter_Right_EOP"，返回值类似 "_Liter_Right_EOP_L"</returns>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.GetBaseName(System.String)">
+            <summary>从带有左右方向后缀的名称中，提取出基准名称</summary>
+            <param name="name"></param>
+            <returns>输入字符类似 "_Liter_Right_EOP_L_R_R_L_r"，返回值类似 "_Liter_Right_EOP"</returns>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.DisplayExpressionManipulators">
+            <summary> 显示规则表达式中的关键字 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.TemplateDirectionSwitch.RematchDisplayExpression(System.String,eZBMCE.CIF.TemplateLib.TemplateDisplayRule[])">
+            <summary> 转换组件的显示规则表达式，比如 "NOT 边坡填方判断_L " </summary>
+            <param name="displayExpression"></param>
+            <param name="allDisplayRulesInTemplate"></param>
+            <returns>输入字符类似  "NOT 边坡填方判断_L "，返回值类似  "NOT 边坡填方判断_R " </returns>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection.SwitchTemplateDirection">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Ec_SwitchTemplateDirection.SwitchTemplateDirection(eZBMCE.AddinManager.DocumentModifier)">
             <summary> 遍历廊道 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints.TestGetXSCutPoints">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.Test_GetXSCutPoints.TestGetXSCutPoints(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 遍历廊道 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.TemplateLib.CorridorManipulator.GetTemplateDefinitionFromItl">
+            <summary> 从 itl 文件中提取某指定的横断面模板定义 </summary>
+            <returns> 以 XmlDocument 的操作为主 </returns>
+        </member>
+        <member name="T:eZBMCE.Cif.Test_Alignment">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.Test_Alignment.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.Test_Alignment.TestAlignment">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Cif.Test_Alignment.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Cif.Test_Alignment.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.Test_Alignment.TestAlignment(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 路线创建与修改测试 </summary>
+        </member>
+        <member name="T:eZBMCE.Cif.CifTest">
+            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
+        </member>
+        <member name="F:eZBMCE.Cif.CifTest.CommandName">
+            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.CifTest.CifFastDebug">
+            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Cif.CifTest.CommandName"/>相同</summary>
+        </member>
+        <member name="M:eZBMCE.Cif.CifTest.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
+            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.CifTest.Test_Cif">
+            <summary> 在 mdl load 中进行调用和调试，而不用 AddinManager 进行调试 </summary>
+        </member>
+        <member name="M:eZBMCE.Cif.CifTest.CifFastDebug(eZBMCE.AddinManager.DocumentModifier)">
+            <summary> 遍历廊道 </summary>
+        </member>
+        <member name="T:eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand">
+            <param name="docMdf"></param>
+            <returns>如果要取消操作（即将事务 Abort 掉），则返回 false，如果要提交事务，则返回 true </returns>
+        </member>
+        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.ExecuteCommand(eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand)">
+            <summary> 执行外部命令，并且在执行命令之前，自动将 事务打开</summary>
+            <param name="cmd">要执行的命令</param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.DoSomethingTemplate(eZBMCE.AddinManager.DocumentModifier)">
+            <summary>
+            具体的调试操作的代码模板
+            </summary>
+            <param name="docMdf"></param>
+            <param name="impliedSelection"></param>
+        </member>
+        <member name="T:eZBMCE.AddinManager.DocumentModifier">
+            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
+        </member>
+        <member name="P:eZBMCE.AddinManager.DocumentModifier.Application">
+            <summary> 当前活动的进程 </summary>
+        </member>
+        <member name="P:eZBMCE.AddinManager.DocumentModifier.ActiveViewport">
+            <summary> 当前活动的视口 </summary>
+        </member>
+        <member name="F:eZBMCE.AddinManager.DocumentModifier._messageCenter">
+            <summary> 消息中心 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.#ctor(System.Boolean)">
+            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
+            <param name="openDebugerText">是否要打开一个文本调试器</param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.TransactionRollBack">
+            <summary> 回滚事务 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLineIntoDebuger(System.Object[])">
+            <summary> 向文本调试器中写入数据 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLinesIntoDebuger(System.Object[])">
+            <summary> 向文本调试器中写入多行数据 </summary>
+            <param name="lines"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Object[])">
+            <summary> 实时显示调试信息 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteAlterMessageNow(System.Object[])">
+            <summary> 在弹出的对话框中，实时显示调试信息 </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteCurrentMethodName">
+            <summary> 实时显示当前正在执行的方法的名称 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Boolean,System.Object[])">
+            <summary> 实时显示调试信息 </summary>
+            <param name="openAlertBox">是否要弹出一个警告对话框</param>
+            <param name="value"></param>
+        </member>
+        <member name="T:eZBMCE.AddinManager.DllActivator_eZBM">
+            <summary> 用于 AddinManager 中调试 dll 时将引用的程序集加载到进程中 </summary>
+        </member>
+        <member name="M:eZBMCE.AddinManager.DllActivator_eZBM.ActivateReferences">
+            <summary>
+            激活本DLL所引用的那些DLLs
+            </summary>
         </member>
         <member name="T:eZBMCE.Debug.FastDebug">
             <summary> 计算选择的所有曲线的面积与长度之和 </summary>
@@ -135,6 +731,22 @@
         <member name="M:eZBMCE.Debug.EcObject.EcItemTypeTest.TestItemType(eZBMCE.AddinManager.DocumentModifier)">
             <summary> <seealso cref="F:eZBMCE.Debug.EcObject.EcItemTypeTest.CommandDescription"/> </summary>
         </member>
+        <member name="M:eZBMCE.Debug.EcObject.ECPropertyValueChangedTest.OnPropertyPaneValueChanging(Bentley.ECObjects.Instance.IECPropertyValue,System.Object,System.String@)">
+            <summary> 用户在界面中修改了某属性的值后触发此事件 </summary>
+            <param name="beforePropertyValue">修改前的值</param>
+            <param name="afterValue">修改后的值</param>
+            <param name="rejectionMessage"> 如果返回false，则会弹出警告框，并显示此提示信息 </param>
+            <returns>true表示接受修改，false则会撤消对属性值的修改</returns>
+        </member>
+        <member name="M:eZBMCE.Debug.EcObject.ECPropertyValueChangedTest.TestIECValidatorDelegate(Bentley.ECObjects.Instance.IECPropertyValue,System.Object)">
+            <summary>
+            设计 Bentley.ECObjects.Schema.IECValidatorDelegate 委托，并将其直接赋值给 ECProperty对象.Validator 属性。
+            就可以当用户在属性面板中修改此属性值时，对新值进行验证。 
+            </summary>
+            <param name="propertyValue"></param>
+            <param name="nativeValue"></param>
+            <remarks>当输入值非法时，则会通过 throw new Bentley.ECObjects.ECObjectsException.Validation() 弹出警告框，并显示此提示信息</remarks>
+        </member>
         <member name="T:eZBMCE.Debug.EcSelect">
             <summary> 计算选择的所有曲线的面积与长度之和 </summary>
         </member>
@@ -165,72 +777,6 @@
         <member name="M:eZBMCE.Debug.CommandTemplate.DoSomething(eZBMCE.AddinManager.DocumentModifier)">
             <summary> 计算选择的所有曲线的面积与长度之和 </summary>
         </member>
-        <member name="T:eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand">
-            <param name="docMdf"></param>
-            <returns>如果要取消操作（即将事务 Abort 掉），则返回 false，如果要提交事务，则返回 true </returns>
-        </member>
-        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.ExecuteCommand(eZBMCE.AddinManager.AddinManagerDebuger.ExternalCommand)">
-            <summary> 执行外部命令，并且在执行命令之前，自动将 事务打开</summary>
-            <param name="cmd">要执行的命令</param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.AddinManagerDebuger.DoSomethingTemplate(eZBMCE.AddinManager.DocumentModifier)">
-            <summary>
-            具体的调试操作的代码模板
-            </summary>
-            <param name="docMdf"></param>
-            <param name="impliedSelection"></param>
-        </member>
-        <member name="T:eZBMCE.AddinManager.DocumentModifier">
-            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
-        </member>
-        <member name="P:eZBMCE.AddinManager.DocumentModifier.Application">
-            <summary> 当前活动的进程 </summary>
-        </member>
-        <member name="P:eZBMCE.AddinManager.DocumentModifier.ActiveViewport">
-            <summary> 当前活动的视口 </summary>
-        </member>
-        <member name="F:eZBMCE.AddinManager.DocumentModifier._messageCenter">
-            <summary> 消息中心 </summary>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.#ctor(System.Boolean)">
-            <summary> 对文档进行配置，以启动文档的改写模式 </summary>
-            <param name="openDebugerText">是否要打开一个文本调试器</param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.TransactionRollBack">
-            <summary> 回滚事务 </summary>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLineIntoDebuger(System.Object[])">
-            <summary> 向文本调试器中写入数据 </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteLinesIntoDebuger(System.Object[])">
-            <summary> 向文本调试器中写入多行数据 </summary>
-            <param name="lines"></param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Object[])">
-            <summary> 实时显示调试信息 </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteAlterMessageNow(System.Object[])">
-            <summary> 在弹出的对话框中，实时显示调试信息 </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteCurrentMethodName">
-            <summary> 实时显示当前正在执行的方法的名称 </summary>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DocumentModifier.WriteMessageLineNow(System.Boolean,System.Object[])">
-            <summary> 实时显示调试信息 </summary>
-            <param name="openAlertBox">是否要弹出一个警告对话框</param>
-            <param name="value"></param>
-        </member>
-        <member name="T:eZBMCE.AddinManager.DllActivator_eZBM">
-            <summary> 用于 AddinManager 中调试 dll 时将引用的程序集加载到进程中 </summary>
-        </member>
-        <member name="M:eZBMCE.AddinManager.DllActivator_eZBM.ActivateReferences">
-            <summary>
-            激活本DLL所引用的那些DLLs
-            </summary>
-        </member>
         <member name="M:eZBMCE.Examples.GeometryCreator.CreateLineString(Bentley.DgnPlatformNET.DgnModel,Bentley.DgnPlatformNET.Elements.Element,Bentley.GeometryNET.DPoint3d[])">
             <summary> 创建线串对象 </summary>
             <returns>比如：Line String（由 line 组成）</returns>
@@ -242,33 +788,6 @@
         <member name="M:eZBMCE.Examples.GeometryCreator.CreateComplexString(Bentley.DgnPlatformNET.DgnModel,Bentley.DgnPlatformNET.Elements.Element,Bentley.GeometryNET.DPoint3d[])">
             <summary> 创建复杂链对象 </summary>
             <returns>比如：Complex Chain（由 line、arc组成）</returns>
-        </member>
-        <member name="T:eZBMCE.Addins.SnoopObjects.EcSnoopObjects">
-            <summary> 计算选择的所有曲线的面积与长度之和 </summary>
-        </member>
-        <member name="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName">
-            <summary> 命令行命令名称，同时亦作为命令语句所对应的C#代码中的函数的名称 </summary>
-        </member>
-        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects">
-            <summary> 注意此函数的名称要与<seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandName"/>相同</summary>
-        </member>
-        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.Execute(System.String@,System.Collections.Generic.IList{Bentley.DgnPlatformNET.ElementId}@)">
-            <summary> 在 AddinMananger 中以外部命令的形式调用和调试 </summary>
-        </member>
-        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.SnoopObjects(eZBMCE.AddinManager.DocumentModifier)">
-            <summary> <seealso cref="F:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CommandDescription"/> </summary>
-        </member>
-        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.CheckProductType">
-            <summary> 当前运行的程序 </summary>
-            <returns></returns>
-        </member>
-        <member name="M:eZBMCE.Addins.SnoopObjects.EcSnoopObjects.TryConvertMSElementToORDElement(Bentley.CifNET.SDK.ConsensusConnection,Bentley.DgnPlatformNET.Elements.Element[])">
-            <summary>
-            尝试将MS中的元素转换为ORD中的元素
-            </summary>
-            <param name="sdkCon"></param>
-            <param name="objs"></param>
-            <returns></returns>
         </member>
         <member name="M:eZBMCE.SnoopObjects.Form_ObjectProperties.ConvertIEnumerableToArray(System.Object)">
             <summary>
@@ -302,117 +821,6 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
-        </member>
-        <member name="T:eZBMCE.Utilities.ExtensionMethods">
-            <summary> 扩展函数 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToArray(Bentley.Interop.MicroStationDGN.ElementEnumerator)">
-            <summary>  </summary>
-            <param name="elements"><seealso cref="T:Bentley.Interop.MicroStationDGN.Element"/>集合</param>
-        </member>
-        <member name="M:eZBMCE.Utilities.ExtensionMethods.ToElementHandle(Bentley.DgnPlatformNET.Elements.Element)">
-            <summary> C# Element  转换为 ElemHandle 指针 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsInteropElement(Bentley.DgnPlatformNET.Elements.Element,Bentley.Interop.MicroStationDGN.ModelReference)">
-            <summary> COM Element 与 Native Element 的相互转换 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.ExtensionMethods.AsNativeElement(Bentley.Interop.MicroStationDGN.Element,Bentley.DgnPlatformNET.DgnModel)">
-            <summary> COM Element 与 Native Element 的相互转换 </summary>
-        </member>
-        <member name="T:eZBMCE.Utilities.Selector">
-            <summary> 界面中的元素选择器 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Selector.SelectSingleElement``1">
-            <summary> 在界面中选择一个单一元素 </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlWindow_viewWindowGet(System.Int64)">
-            <summary>
-            通过视图取得对应的MSWindow句柄
-            </summary>
-            <param name="viewNum">视图编号，0对应视图1，7对应视图8</param>
-            <returns></returns>
-        </member>
-        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlView_fitViewToRange(Bentley.GeometryNET.DPoint3d@,Bentley.GeometryNET.DPoint3d@,eZBMCE.Utilities.MDLFunctions.FitViewOptions,System.Int64)">
-            <summary>
-            Fit the contents of the specified range in the given view. 
-            </summary>
-            <param name="minP">the minimum X Y and Z values of the range </param>
-            <param name="maxP">the maximum X Y and Z values of the range </param>
-            <param name="optionP">the FitViewOptions to apply to the view when it is redrawn </param>
-            <param name="viewIndex">the index of the view to fit the specified range block in.
-            viewIndex在编程时是以0为基准的，也就是说，viewIndex = 0代表的是“视图1”（MicroStation中最多有8个视图） </param>
-            <returns>StatusInt:SUCCESS if the view is redrawn without error.  </returns>
-            <remarks>Range points need to be in the view coordinate system, see mdlRMatrix_multiplyRange. 
-            Unlike many other view functions, this function expects points in design file coordinates, so apply the currtrans via mdlCurrTrans_transformPointArray.
-            </remarks>
-        </member>
-        <member name="T:eZBMCE.Utilities.MDLFunctions.FitViewOptions">
-            <summary>
-            Options control structure for fitting views. 
-            </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.forceActiveZToCenter">
-            <summary> make ActiveZ go to center of view volume </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.expandClippingPlanes">
-            <summary> move front and back planes out as needed </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.disableCenterCamera">
-            <summary> disableCenterCamera whether fit view re-centers the camera </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreTransients">
-            <summary> ignoreTransients whether transient elements should be included in fit range </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.dontIncludeParentsOfNestedRefs">
-            <summary> dontIncludeParentsOfNestedRefs  if true, do only modelRefs in fitList, and not the parent references </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.ignoreCallouts">
-            <summary> ignoreCallouts  if true, callouts will be ignored </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding">
-            <summary> optionPadding  reserved </summary>
-        </member>
-        <member name="F:eZBMCE.Utilities.MDLFunctions.FitViewOptions.optionPadding2">
-            <summary> optionPadding2 reserved </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.MDLFunctions.mdlElement_extractRange(System.Int64@,System.Int64)">
-            <summary>
-            Extract your element's range (two points: low left bottom point + high right top point). 
-            Used to extract the range from an element. The range is transformed by the current transform if one exists. 
-            </summary>
-            <param name="rangeP">out: rangeP is the element range of type DVector3d*.  </param>
-            <param name="pElement">is the input element</param>
-            <returns>SUCCESS if the element range is extracted successfully - an appropriate error code otherwise. </returns>
-        </member>
-        <member name="T:eZBMCE.Utilities.Utils">
-            <summary> 一些常用的静态方式，用来辅助开发 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.TryGetElement``1">
-            <summary> 从当前界面中的选择集中提取指定类型的对象 </summary>
-            <returns>如果未选择指定类型的对象，则返回null</returns>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.GetSelection">
-            <summary> 获取当前选择集（Net） </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.GetSelection(Bentley.Interop.MicroStationDGN.Application)">
-            <summary> 获取当前选择集（Interop） </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.ShowElementProperties(Bentley.DgnPlatformNET.Elements.Element)">
-            <summary> 显示某Element的属性 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.GetDefinitionModel(System.String,System.Boolean)">
-            <summary> Get definiton model. </summary>
-            <param name="modelName">Definition model name. 如果输入null，则返回当前活动的DgnModel </param>
-            <param name="createIfNotFound">Create a new definition model if the model does not exist.</param>
-            <returns>Returns definition model.</returns>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.UpdateView(System.Int32)">
-            <summary> 刷新视口显示 </summary>
-        </member>
-        <member name="M:eZBMCE.Utilities.Utils.FitView(System.Int32)">
-            <summary> 视口匹配对象 </summary>
         </member>
         <member name="T:eZBMCE.AddinInitialize.Program">
             <summary>
@@ -451,6 +859,10 @@
             <summary> CommandKeyin </summary>
             <param name="unparsed"></param>    
         </member>
+        <member name="M:eZBMCE.AddinInitialize.Keyin.Test_Cif(System.String)">
+            <summary> CommandKeyin </summary>
+            <param name="unparsed"></param>    
+        </member>
         <member name="T:eZBMCE.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -471,10 +883,6 @@
             <summary>
               Looks up a localized string similar to eZBMCE.
             </summary>
-        </member>
-        <member name="M:TrainingManagedEditSDKExamples.CorridorManipulator.GetTemplateDefinitionFromItl">
-            <summary> 从 itl 文件中提取某指定的横断面模板定义 </summary>
-            <returns> 以 XmlDocument 的操作为主 </returns>
         </member>
         <member name="F:MSDIAddin.MstnControlForm.components">
             <summary>

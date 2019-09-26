@@ -7,7 +7,7 @@ using Bentley.CifNET.GeometryModel.SDK.Edit;
 using Bentley.CifNET.SDK.Edit;
 using eZBMCE.AddinManager;
 
-namespace TrainingManagedEditSDKExamples
+namespace eZBMCE.Cif.TemplateLib
 {
     internal class CorridorManipulator
     {
@@ -15,7 +15,7 @@ namespace TrainingManagedEditSDKExamples
         {
 
             TemplateDefinition tempDef = GetTemplateDefinitionFromItl();
-
+           TemplatePoint tpt = tempDef.GetChildPoints("").First();
             //ConsensusConnectionEdit allows the persistence of civil objects to the DGN file
             Bentley.CifNET.SDK.Edit.ConsensusConnectionEdit con = ConsensusConnectionEdit.GetActive();
 
@@ -90,6 +90,7 @@ namespace TrainingManagedEditSDKExamples
             }
             string txmlFragement = TemplateNode.OuterXml;
             TemplateDefinition tempDef = TemplateDefinition.LoadXml(txmlFragement);
+            
             return tempDef;
         }
     }

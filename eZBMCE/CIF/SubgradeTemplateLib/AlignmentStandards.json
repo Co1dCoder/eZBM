@@ -1,0 +1,12 @@
+{
+  "AlignmentStandards": 
+  [
+	{"RoadClass": 0,"Description": "高速公路", "PossibleSectionType": [1,2,3,4],"PossibleSpeed": [120,100,80], "LaneNum": [8,6,4]},
+	{"RoadClass": 1,"Description": "一级公路","PossibleSectionType": [1], "PossibleSpeed": [100,80,60], "LaneNum": [8,6,4]},
+	{"RoadClass": 2,"Description": "二级公路","PossibleSectionType": [0], "PossibleSpeed": [80,60], "LaneNum": [2]},
+	{"RoadClass": 3,"Description": "三级公路","PossibleSectionType": [0], "PossibleSpeed": [40,30], "LaneNum": [2]},	
+	{"RoadClass": 4,"Description": "四级公路","PossibleSectionType": [0], "PossibleSpeed": [30,20], "LaneNum": [2]},
+	{"RoadClass": 5,"Description": "场内交通道路","PossibleSectionType": [0], "PossibleSpeed": [40,30,20], "LaneNum": [2]},	
+	{"RoadClass": 6,"Description": "对外交通专用道路","PossibleSectionType": [0], "PossibleSpeed": [60,40], "LaneNum": [2]},
+  ]
+}

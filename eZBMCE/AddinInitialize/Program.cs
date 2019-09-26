@@ -5,6 +5,7 @@
 |
 +--------------------------------------------------------------------------------------*/
 
+using System;
 using System.Resources;
 using System.Windows.Forms;
 using Bentley.MstnPlatformNET;
@@ -26,7 +27,7 @@ namespace eZBMCE.AddinInitialize
         {
             Addin = this;
         }
-
+    
         /// <summary>
         /// Initializes the AddIn. Called by the AddIn loader after
         /// it has created the instance of this AddIn class
@@ -73,8 +74,10 @@ namespace eZBMCE.AddinInitialize
             base.OnUnloading(eventArgs);
         }
 
+
+
         #region Properties               
-        private static ResourceManager resourceManager
+    private static ResourceManager resourceManager
         {
             get { return Properties.Resources.ResourceManager; }
         }

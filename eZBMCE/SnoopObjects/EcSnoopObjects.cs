@@ -173,11 +173,46 @@ namespace eZBMCE.Addins.SnoopObjects
                     Corridor ordEnt = Corridor.CreateFromElement(sdkCon, elem); // 若转换不了则返回 null;
                     if (ordEnt != null)
                     {
-                        isOrdEnt = true;
-                        newObjs[i] = ordEnt;
+                        // Corridor 与 Linear Template 在代码中都属于Corridor 对象，但是 Linear Template 对象并不含有Corridor对象的所有特性，
+                        // 如果按Corridor的接口来读取 Linear Template 对象的信息的话，会导致ORD崩溃，
+                        // 所以这里再作一个特殊处理——屏蔽掉 Linear Template 所对应的 Corridor。
+                        if (!ordEnt.Element.Description.StartsWith("Linear Template"))
+                        {
+                            isOrdEnt = true;
+                            newObjs[i] = ordEnt;
+                        }
                     }
                 }
-
+                // 处理其他 ORD 中特有的类型
+                if (!isOrdEnt)
+                {
+                    CurveWidening cw = CurveWidening.CreateFromElement(sdkCon, elem);
+                    if (cw != null)
+                    {
+                        isOrdEnt = true;
+                        newObjs[i] = cw;
+                    }
+                }
+                // 处理其他 ORD 中特有的类型
+                if (!isOrdEnt)
+                {
+                    PointControl pc = PointControl.CreateFromElement(sdkCon, elem);
+                    if (pc != null)
+                    {
+                        isOrdEnt = true;
+                        newObjs[i] = pc;
+                    }
+                }
+                // 处理其他 ORD 中特有的类型
+                if (!isOrdEnt)
+                {
+                    TemplateDrop td = TemplateDrop.CreateFromElement(sdkCon, elem);
+                    if (td != null)
+                    {
+                        isOrdEnt = true;
+                        newObjs[i] = td;
+                    }
+                }
                 // 最终处理
                 if (!isOrdEnt)
                 {

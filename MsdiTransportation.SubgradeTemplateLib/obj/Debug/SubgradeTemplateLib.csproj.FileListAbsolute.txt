@@ -1,0 +1,15 @@
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\MsdiTransportation.SubgradeTemplateLib.exe.config
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\MsdiTransportation.SubgradeTemplateLib.exe
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\MsdiTransportation.SubgradeTemplateLib.pdb
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\eZstd.dll
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\eZstd.pdb
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\eZstd.xml
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\SubgradeTemplateLib.csprojResolveAssemblyReference.cache
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.Properties.Resources.resources
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\SubgradeTemplateLib.csproj.GenerateResource.Cache
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.SubgradeTemplateLib.exe
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.SubgradeTemplateLib.pdb
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\bin\Debug\Newtonsoft.Json.xml
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.SubgradeTemplateLib.Control.C_SubgradeComp.resources
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.SubgradeTemplateLib.Control.C_Subgrade.resources
+D:\GithubProjects\eZBM\MsdiTransportation.SubgradeTemplateLib\obj\Debug\MsdiTransportation.SubgradeComponent.FormSubgradeConstructor.resources

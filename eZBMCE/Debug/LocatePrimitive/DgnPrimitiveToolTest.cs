@@ -15,7 +15,7 @@ namespace eZBMCE.LocatePrimitive
 
         protected override bool OnResetButton(DgnButtonEvent ev)
         {
-            return false;
+         return false;
         }
 
         protected override bool OnDataButton(DgnButtonEvent ev)

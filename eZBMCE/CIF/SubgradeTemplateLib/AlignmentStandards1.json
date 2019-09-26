@@ -1,0 +1,1 @@
+{"JSonFormatWithCSCodeTest":[{"RoadClass":0,"Description":"高速公路","PossibleSpeed":[120.0,100.0,80.0],"ProjectDate":"0001-01-01T00:00:00","NullValueObj":{"Name":null},"NullRefObj":null},{"RoadClass":1,"Description":"一级公路","PossibleSpeed":[80.0,60.0],"ProjectDate":"0001-01-01T00:00:00","NullValueObj":{"Name":null},"NullRefObj":null}]}

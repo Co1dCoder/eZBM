@@ -12,3 +12,5 @@ D:\GithubProjects\eZBM\eZBMCE\obj\Debug\ManagedToolsExample.PlaceGroupedHoleForm
 D:\GithubProjects\eZBM\eZBMCE\obj\Debug\Hello.PCForm.resources
 D:\GithubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.Debug.Form1.resources
 D:\GithubProjects\eZBM\eZBMCE\obj\Debug\MSDIAddin.MstnControlForm.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.Addins.Form1.resources
+D:\GithubProjects\eZBM\eZBMCE\obj\Debug\eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.resources

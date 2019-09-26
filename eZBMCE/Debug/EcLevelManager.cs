@@ -10,6 +10,7 @@ using Bentley.ECObjects.Lightweight;
 using Bentley.GeometryNET;
 using Bentley.Interop.MicroStationDGN;
 using eZBMCE.AddinManager;
+using eZBMCE.Cif;
 using eZBMCE.Utilities;
 using ManagedFenceExample;
 using ManagedToolsExample;

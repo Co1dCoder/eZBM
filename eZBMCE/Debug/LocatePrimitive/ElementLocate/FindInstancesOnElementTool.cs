@@ -21,6 +21,8 @@ namespace DgnECExample
 +===============+===============+===============+===============+===============+======*/
     class FindInstancesOnElementTool : DgnElementSetTool
     {
+
+
         private static Form m_findInstancesForm = null;
         // private static FindInstancesOnElementForm m_findInstancesForm = null;
 
@@ -66,6 +68,8 @@ namespace DgnECExample
 +---------------+---------------+---------------+---------------+---------------+------*/
         protected override bool OnDataButton(Bentley.DgnPlatformNET.DgnButtonEvent ev)
         {
+            AccuSnap.SnapEnabled = true;
+
             //Locate an element.
             Bentley.DgnPlatformNET.HitPath hitPath = DoLocate(ev, true, 1);
 

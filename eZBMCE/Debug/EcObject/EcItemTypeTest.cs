@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Bentley.DgnPlatformNET;
 using Bentley.DgnPlatformNET.DgnEC;
 using Bentley.EC.Persistence.Query;
+using Bentley.ECObjects;
 using Bentley.ECObjects.Instance;
 using Bentley.ECObjects.Schema;
 using eZBMCE.AddinManager;
@@ -26,6 +27,7 @@ namespace eZBMCE.Debug.EcObject
         public const string CommandName = @"TestItemType";
 
         private const string CommandDescription = @"ItemType测试";
+
         private const string CommandText = CommandDescription;
 
         /// <summary> 注意此函数的名称要与<seealso cref="CommandName"/>相同</summary>
@@ -39,7 +41,9 @@ namespace eZBMCE.Debug.EcObject
             ref IList<ElementId> elementSet)
         {
             var s = new EcItemTypeTest();
-            return AddinManagerDebuger.DebugInAddinManager(s.TestItemType, ref errorMessage, ref elementSet);
+            var res = AddinManagerDebuger.DebugInAddinManager(s.TestItemType, ref errorMessage, ref elementSet);
+            //throw new ECObjectsException.Validation("TestIECValidatorDelegate ECObjectsException 1321321");
+            return res;
         }
 
         #endregion
@@ -52,6 +56,7 @@ namespace eZBMCE.Debug.EcObject
             _docMdf = docMdf;
             ECPropertyValueChangedTest tt = new ECPropertyValueChangedTest();
             tt.CreateECDInstancesOnElement(docMdf);
+
             return AddinManagerDebuger.ExternalCmdResult.Commit;
 
             EcExample.DebugFast(docMdf);

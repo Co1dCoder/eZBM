@@ -1,0 +1,17 @@
+e:\Builds\orsdk10070056\Output\Winx64\Product\ORD_SDKStation\ORD_SDKStation\mdlapps\ManagedSDKExample.dll
+e:\Builds\orsdk10070056\Output\Winx64\Product\ORD_SDKStation\ORD_SDKStation\mdlapps\ManagedSDKExample.pdb
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.csprojAssemblyReference.cache
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.CivilCellTreeForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.CurveWideningPlaceForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.FeatureForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.SuperElevationAssignForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.SuperElevationPlaceForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.TemplatePickForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.PIForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.ProfileForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.ReportResultsForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.Utility.XSCutPointForm.resources
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.csproj.GenerateResource.cache
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.csproj.CoreCompileInputs.cache
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.dll
+e:\Builds\orsdk10070056\Source\OpenRoadsDesigner\PowerProduct\OpenRoadsDesignerSDK\ORDExamples\ManagedSDKExample\obj\Debug\ManagedSDKExample.pdb

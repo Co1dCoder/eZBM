@@ -6,6 +6,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <StartArguments>csc /r:ITestDll=ITest.dll Program.cs</StartArguments>
     <StartProgram>C:\Softwares\Civil Engineering\Bentley\MicroStation CE\MicroStation\microstation.exe</StartProgram>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartProgram>C:\Softwares\Civil Engineering\Bentley\MicroStation CE\MicroStation\microstation.exe</StartProgram>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+
+  <!-- Required | Root Table (MANAGEDSDKEXAMPLE) -->
+  <RootKeyinTable ID="root">
+    <Keyword SubtableRef="Commands" CommandWord="MANAGEDSDKEXAMPLE">
+      <Options Required="true" />
+    </Keyword>
+  </RootKeyinTable>
+
+  <SubKeyinTables>
+    <!--  Secondary Command Table (MANAGEDSDKEXAMPLE _____ )-->
+    <KeyinTable ID="Commands">
+      <Keyword SubtableRef="ReportCmd" CommandWord="REPORT">
+        <Options Required="true" />
+      </Keyword>
+      <Keyword SubtableRef="CreateCmd" CommandWord="CREATE">
+        <Options Required="true" />
+      </Keyword>
+    </KeyinTable>
+
+    <!-- Report Table (MANAGEDSDKEXAMPLE REPORT _____ )  -->
+    <KeyinTable ID="ReportCmd">
+      <Keyword SubtableRef="ReportHorAlignmentsCmd" CommandWord="HORIZONTALALIGNMENTS">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword CommandWord="PROFILEELEMENTS" />
+      <Keyword CommandWord="STATIONELEVATIONS" />
+      <Keyword CommandWord="ACTIVESTATIONELEVATION"/>
+      <Keyword CommandWord="STATIONOFFSETELEVATION"/>
+      <Keyword CommandWord="DRAPELINEATINTERVAL"/>
+      <Keyword CommandWord="CORRIDORS"/>
+      <Keyword CommandWord="QQCHECKER"/>
+      <Keyword SubtableRef="XSCutPointsCmd" CommandWord="XSCUTPOINTS">
+        <Options Required="false" />
+      </Keyword>
+    </KeyinTable>
+
+    <!-- HorizontalAlignments Table (MANAGEDSDKEXAMPLE REPORT HORIZONTALALIGNMENTS _____ ) -->
+    <KeyinTable ID="ReportHorAlignmentsCmd">
+      <Keyword CommandWord="ASANNOTATION" />
+      <Keyword CommandWord="ITEMTYPES"/>
+      <Keyword CommandWord="PICKALIGNMENT"/>
+    </KeyinTable>
+
+    <!-- XSCutPoints Table (MANAGEDSDKEXAMPLE REPORT XSCUTPOINTS _____ ) -->
+    <KeyinTable ID="XSCutPointsCmd">
+      <Keyword CommandWord="PICKCORRIDOR" />
+      <Keyword CommandWord="ALLCORRIDORS"/>
+    </KeyinTable>
+
+    <!-- Report Table (MANAGEDSDKEXAMPLE CREATE _____ )  -->
+    <KeyinTable ID="CreateCmd">
+      <Keyword SubtableRef="CreateHorAlignmentsCmd" CommandWord="HORIZONTALALIGNMENTS">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword SubtableRef="CreateVerAlignmentsCmd" CommandWord="VERTICALALIGNMENTS">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword SubtableRef="CreateCorridorItemsCmd" CommandWord="CORRIDORITEMS">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword SubtableRef="CreateCivilCellCmd" CommandWord="CIVILCELL">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword SubtableRef="CreateSuperElevationCmd" CommandWord="SUPERELEVATION">
+        <Options Required="false" />
+      </Keyword>
+      <Keyword SubtableRef="CreateCurveWideningCmd" CommandWord="CURVEWIDENING">
+        <Options Required="false" />
+      </Keyword>
+    </KeyinTable>
+
+    <!-- HorizontalAlignmentsCreator Table (MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS _____ ) -->
+    <KeyinTable ID="CreateHorAlignmentsCmd">
+      <Keyword CommandWord="LINE" />
+      <Keyword CommandWord="ARC"/>
+      <Keyword CommandWord="SPIRAL"/>
+      <Keyword CommandWord="COMPLEX ALIGNMENT"/>
+      <Keyword CommandWord="PI ALIGNMENT"/>
+      <Keyword CommandWord="CURB RETURNS"/>
+    </KeyinTable>
+
+    <!-- HorizontalAlignmentsCreator Table (MANAGEDSDKEXAMPLE CREATE VERTICALALIGNMENTS _____ ) -->
+    <KeyinTable ID="CreateVerAlignmentsCmd">
+      <Keyword CommandWord="LINE" />
+      <Keyword CommandWord="PARABOLA" />
+      <Keyword CommandWord="COMPLEX ALIGNMENT" />
+    </KeyinTable>
+
+    <!-- CorridorItemsCreator Table (MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS _____ ) -->
+    <KeyinTable ID="CreateCorridorItemsCmd">
+      <Keyword CommandWord="COMPLEX ALIGNMENT" />
+      <Keyword CommandWord="SETFEATUREDEFINITION" />
+      <Keyword CommandWord="PROFILE" />
+      <Keyword CommandWord="CORRIDOR" />
+      <Keyword CommandWord="TEMPLATEDROP" />
+      <Keyword CommandWord="KEYSTATION" />
+    </KeyinTable>
+
+    <!-- CivilCellItemsCreator Table (MANAGEDSDKEXAMPLE CREATE CIVILCELL _____ ) -->
+    <KeyinTable ID="CreateCivilCellCmd">
+      <Keyword CommandWord="PLACE" />
+    </KeyinTable>
+
+    <!-- CivilCellItemsCreator Table (MANAGEDSDKEXAMPLE CREATE SUPERELEVATION _____ ) -->
+    <KeyinTable ID="CreateSuperElevationCmd">
+      <Keyword CommandWord="PLACE" />
+      <Keyword CommandWord="ASSIGN" />
+    </KeyinTable>
+
+    <!-- CivilCellItemsCreator Table (MANAGEDSDKEXAMPLE CREATE CURVEWIDENING _____ ) -->
+    <KeyinTable ID="CreateCurveWideningCmd">
+      <Keyword CommandWord="PLACE" />
+    </KeyinTable>
+  </SubKeyinTables>
+
+  <!-- Maps Keyin Commands to Functions in Keyin.cs File -->
+  <KeyinHandlers>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT HORIZONTALALIGNMENTS"                    Function="ManagedSDKExample.Keyin.CmdHorizontalAlignmentReport"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT HORIZONTALALIGNMENTS ASANNOTATION"       Function="ManagedSDKExample.Keyin.CmdHorizontalAlignmentAnnotation"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT HORIZONTALALIGNMENTS ITEMTYPES"          Function="ManagedSDKExample.Keyin.CmdHorizontalAlignmentItemTypes"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT HORIZONTALALIGNMENTS PICKALIGNMENT"      Function="ManagedSDKExample.Keyin.CmdPickAlignment"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT STATIONELEVATIONS"                       Function="ManagedSDKExample.Keyin.CmdStationElevationsReport"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT PROFILEELEMENTS"                         Function="ManagedSDKExample.Keyin.CmdProfileElementReport"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT ACTIVESTATIONELEVATION"                  Function="ManagedSDKExample.Keyin.CmdActiveStationElevationAtInterval"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT STATIONOFFSETELEVATION"                  Function="ManagedSDKExample.Keyin.CmdStationOffsetElevation"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT DRAPELINEATINTERVAL"                     Function="ManagedSDKExample.Keyin.CmdDrapeLineAtInterval"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT CORRIDORS"                               Function="ManagedSDKExample.Keyin.CmdCorridorReport"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT QQCHECKER"                               Function="ManagedSDKExample.Keyin.CmdQQChecker"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT XSCUTPOINTS"                             Function="ManagedSDKExample.Keyin.CmdXSCutPointReportPickCorridor"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT XSCUTPOINTS PICKCORRIDOR"                Function="ManagedSDKExample.Keyin.CmdXSCutPointReportPickCorridor"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE REPORT XSCUTPOINTS ALLCORRIDORS"                Function="ManagedSDKExample.Keyin.CmdXSCutPointReportAllCorridors"/>
+
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS"                    Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsLine"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS LINE"               Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsLine"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS ARC"                Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsArc"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS SPIRAL"             Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsSpiral"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS COMPLEX ALIGNMENT"  Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsComplexAlignment"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS PI ALIGNMENT"       Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsPIAlignment"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE HORIZONTALALIGNMENTS CURB RETURNS"       Function="ManagedSDKExample.Keyin.CmdCreateHorizontalAlignmentsCurbReturns"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE VERTICALALIGNMENTS"                      Function="ManagedSDKExample.Keyin.CmdCreateVerticalAlignmentsLine"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE VERTICALALIGNMENTS LINE"                 Function="ManagedSDKExample.Keyin.CmdCreateVerticalAlignmentsLine"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE VERTICALALIGNMENTS PARABOLA"             Function="ManagedSDKExample.Keyin.CmdCreateVerticalAlignmentsParabola"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE VERTICALALIGNMENTS COMPLEX ALIGNMENT"    Function="ManagedSDKExample.Keyin.CmdCreateVerticalAlignmentsComplexAlignment"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CIVILCELL PLACE"                         Function="ManagedSDKExample.Keyin.CmdCreateCivilCellPlace"/>
+
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS COMPLEX ALIGNMENT"         Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsComplexAlignment"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS SETFEATUREDEFINITION"      Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsSetFeatureDefinition"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS PROFILE"                   Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsProfile"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS CORRIDOR"                  Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsCorridor"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS TEMPLATEDROP"              Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsTemplateDrop"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CORRIDORITEMS KEYSTATION"                Function="ManagedSDKExample.Keyin.CmdCreateCorridorItemsKeyStation"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE SUPERELEVATION PLACE"                    Function="ManagedSDKExample.Keyin.CmdCreateSuperElevation"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE SUPERELEVATION ASSIGN"                   Function="ManagedSDKExample.Keyin.CmdAssignSuperElevation"/>
+    <KeyinHandler Keyin="MANAGEDSDKEXAMPLE CREATE CURVEWIDENING PLACE"                     Function="ManagedSDKExample.Keyin.CmdCreateCurveWidening"/>
+
+  </KeyinHandlers>
+
+</KeyinTree>
+

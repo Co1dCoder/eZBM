@@ -18,13 +18,15 @@
     <!--Define subtables-->
     <SubKeyinTables>       
         <KeyinTable ID="eZBMCE">
-            <Keyword CommandWord="Command"> </Keyword>
+          <Keyword CommandWord="Command"> </Keyword>
+          <Keyword CommandWord="Test_GetXSCutPoints"> </Keyword>
         </KeyinTable>
     </SubKeyinTables>
 
     <!--Define a mapping from key-in to the method that handles the key-in.-->
     <KeyinHandlers>
-      <KeyinHandler Keyin="eZBMCE Command" Function="eZBMCE.AddinInitialize.Keyin.CommandKeyin"/>      
+      <KeyinHandler Keyin="eZBMCE Command" Function="eZBMCE.AddinInitialize.Keyin.CommandKeyin"/>
+      <KeyinHandler Keyin="eZBMCE Test_GetXSCutPoints" Function="eZBMCE.AddinInitialize.Keyin.Test_GetXSCutPoints"/>      
     </KeyinHandlers>
 </KeyinTree>
  

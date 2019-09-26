@@ -1,4 +1,3 @@
-D:\GithubProjects\eZBM\bin\eZBMCE.XML
 D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\eZBMCE.csprojResolveAssemblyReference.cache
 D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\MSDIAddin.MstnControlForm.resources
 D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\eZBMCE.Debug.Form1.resources
@@ -12,3 +11,4 @@ D:\GithubProjects\eZBM\bin\eZBMCE.dll
 D:\GithubProjects\eZBM\bin\eZBMCE.pdb
 D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\eZBMCE.dll
 D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\eZBMCE.pdb
+D:\GithubProjects\eZBM\eZBMCE\obj\x64\Debug\eZBMCE.CIF.TemplateLib.TemplateLibOrganizer.resources

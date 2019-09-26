@@ -36,7 +36,8 @@
     <StartAction>Program</StartAction>
     <StartProgram>$(MSCEPath)$(MSCEBentleyApp)</StartProgram>
     <StartArguments>$(MSCEArguments)</StartArguments>
-    <DocumentationFile>..\bin\eZBMCE.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
@@ -86,6 +87,18 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bentley.CifNET.4.0">
+      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.4.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.CifNET.CadSystem.4.0">
+      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.CadSystem.4.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.CifNET.CadSystem.Interfaces.4.0">
+      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.CadSystem.Interfaces.4.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Bentley.CifNET.DgnChecker.4.0">
       <HintPath>$(ORDDirectory)Cif\Bentley.CifNET.DgnChecker.4.0.dll</HintPath>
       <Private>False</Private>
@@ -96,6 +109,10 @@
     </Reference>
     <Reference Include="Bentley.CifNET.Geometry.4.0">
       <HintPath>$(ORDDirectory)Cif\Bentley.CifNET.Geometry.4.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.CifNET.GeometryModel.4.0">
+      <HintPath>$(ORDDirectory)Cif\Bentley.CifNET.GeometryModel.4.0.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Bentley.CifNET.GeometryModel.SDK.4.0">
@@ -111,11 +128,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Bentley.CifNET.Model.4.0">
-      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.Model.4.0.dll</HintPath>
+      <HintPath>$(ORDDirectory)Cif\Bentley.CifNET.Model.4.0.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Bentley.CifNET.Objects.4.0">
-      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.Objects.4.0.dll</HintPath>
+      <HintPath>$(ORDDirectory)Cif\Bentley.CifNET.Objects.4.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.CifNET.Objects.Presentation.4.0">
+      <HintPath>..\..\..\Softwares\Civil Engineering\Bentley\OpenRoadsDesigner\Cif\Bentley.CifNET.Objects.Presentation.4.0.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Bentley.CifNET.SDK.4.0">
@@ -149,7 +170,8 @@
     </Reference>
     <Reference Include="Bentley.Interop.MicroStationDGN">
       <HintPath>$(ORDDirectory)Assemblies\Bentley.Interop.MicroStationDGN.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Bentley.MicroStation.WinForms.Controls">
       <HintPath>$(ORDDirectory)Assemblies\Bentley.MicroStation.WinForms.Controls.dll</HintPath>
@@ -174,6 +196,15 @@
     <Reference Include="eZBM_AddinManager, Version=2.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\eZBM_AddinManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedSDKExample, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\ManagedSDKExample.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Softwares\Programming\Visual Studio\Common7\IDE\PrivateAssemblies\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ustation">
       <Private>False</Private>
@@ -220,9 +251,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addins\DeleteElement.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\DesignSpeed.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\RoadClass.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\SubgradeComponent\Lane.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\SubgradeComponent\RoadwayComponent.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\SubgradeComponent\SubgradeConstructor.cs" />
+    <Compile Include="CIF\SubgradeTemplateLib\SubgradeComponent\SubgradeConstructor.Designer.cs">
+      <DependentUpon>SubgradeConstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\GeometryHelper.cs" />
+    <Compile Include="CIF\TemplateLib\INamedNodesInTemplate.cs" />
+    <Compile Include="CIF\TemplateLib\TemplateAttibuteNames.cs" />
+    <Compile Include="CIF\TemplateLib\XMLElementTree.cs" />
+    <Compile Include="CIF\TemplateLib\TemplateDirectionSwitch.cs" />
+    <Compile Include="CIF\TemplateLib\Ec_SwitchTemplateDirection.cs" />
+    <Compile Include="CIF\TemplateLib\TemplateLibOrganizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIF\TemplateLib\TemplateLibOrganizer.Designer.cs">
+      <DependentUpon>TemplateLibOrganizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CIF\Test_Alignment.cs" />
+    <Compile Include="CIF\TemplateLib\Test_GetXSCutPoints.cs" />
     <Compile Include="CIF\CifTest.cs" />
-    <Compile Include="CIF\CorridorManipulator.cs" />
-    <Compile Include="CIF\CreateTemplate.cs" />
+    <Compile Include="CIF\TemplateLib\CorridorManipulator.cs" />
+    <Compile Include="CIF\TemplateLib\CreateTemplate.cs" />
     <Compile Include="Debuger\AddinManagerDebuger.cs" />
     <Compile Include="Debuger\FastDebug.cs" />
     <Compile Include="Debuger\DocumentModifier.cs" />
@@ -294,6 +348,8 @@
     <Compile Include="Utilities\Selector.cs" />
     <Compile Include="Utilities\MDLFunctions.cs" />
     <Compile Include="Utilities\Utils.cs" />
+    <Content Include="Resources\Folder_16.png" />
+    <Content Include="Resources\Template_16.png" />
     <None Include="AddinInitialize\Program_Backup.cs" />
     <Compile Include="AddinInitialize\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -310,6 +366,12 @@
     <Compile Include="AddinInitialize\Keyin.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CIF\SubgradeTemplateLib\SubgradeComponent\SubgradeConstructor.resx">
+      <DependentUpon>SubgradeConstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIF\TemplateLib\TemplateLibOrganizer.resx">
+      <DependentUpon>TemplateLibOrganizer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Debug\ElementPreview\MstnControlForm.resx">
       <DependentUpon>MstnControlForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,9 +414,7 @@
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Addins\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="AddinInitialize\CommandsTemplate.xml">
       <SubType>Designer</SubType>

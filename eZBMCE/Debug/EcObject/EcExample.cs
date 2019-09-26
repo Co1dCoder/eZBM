@@ -26,7 +26,7 @@ namespace eZBMCE.Debug.EcObject
             var dgnFile = model.GetDgnFile();
 
             const string namespacePrefix = "DgnECExample";
-            const string schemaName = "ZengSchema1";
+            const string schemaName = "ZengSchema2";
             const string className = "ZengClass";
             const string propertyName = "ZengProperty";
             const string propertyValue = "ZengPropertyValue";

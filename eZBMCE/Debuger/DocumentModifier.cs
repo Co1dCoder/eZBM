@@ -184,11 +184,15 @@ namespace eZBMCE.AddinManager
         /// <param name="value"></param>
         private void WriteMessageLineNow(bool openAlertBox, params object[] value)
         {
+            string str;
             var sb = new StringBuilder();
-            sb.Append(value[0]);
+
+            str = value[0] == null ? "TNull" : value[0].ToString();
+            sb.Append(str);
             for (int i = 1; i < value.Length; i++)
             {
-                sb.Append($", {value[i]}");
+                str = value[i] == null ? "TNull" : value[i].ToString();
+                sb.Append($", {str}");
             }
 
             // _messageCenter.AddMessage(sb.ToString());

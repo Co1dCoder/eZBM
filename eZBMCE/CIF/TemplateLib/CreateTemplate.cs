@@ -10,7 +10,7 @@ using Bentley.CifNET.Model;
 using Bentley.DgnPlatformNET;
 using Bentley.CifNET.GeometryModel.SDK.Edit;
 
-namespace TrainingManagedEditSDKExamples
+namespace eZBMCE.Cif.TemplateLib
 {
     internal class CreateTemplate
     {
@@ -70,7 +70,8 @@ namespace TrainingManagedEditSDKExamples
             System.Xml.XmlNode ParentNode = TemplateNode.ParentNode;
             string txmlFragement = TemplateNode.OuterXml;
             TemplateDefinition template = TemplateDefinition.LoadXml(txmlFragement);
-            template.Name = "temp1";
+            // template.Name = "temp1";
+
             //Create a new node.
             System.Xml.XmlNode TemplateNodeNew = TemplateNode.Clone();
             TemplateNodeNew.RemoveAll();
@@ -235,7 +236,8 @@ namespace TrainingManagedEditSDKExamples
             System.Xml.XmlNode ParentNode = TemplateNode.ParentNode;
             string txmlFragement = TemplateNode.OuterXml;
             TemplateDefinition template = TemplateDefinition.LoadXml(txmlFragement);
-            template.Name = "temp1";
+            // template.Name = "temp1";
+
             //Create a new node.
             System.Xml.XmlNode TemplateNodeNew = TemplateNode.Clone();
             TemplateNodeNew.RemoveAll();
@@ -339,8 +341,6 @@ namespace TrainingManagedEditSDKExamples
             tmpCom.AddVertex(vertex2);
             tmpCom.AddVertex(vertex4);
             tmpCom.AddVertex(vertex3);
-
-
 
             System.Collections.Generic.List<TemplateVertex> pointsOfFeature1 = tmpCom.GetVerticesByFeatureName(featureName1);
 
@@ -648,7 +648,8 @@ namespace TrainingManagedEditSDKExamples
             System.Xml.XmlNode ParentNode = TemplateNode.ParentNode;
             string txmlFragement = TemplateNode.OuterXml;
             TemplateDefinition template = TemplateDefinition.LoadXml(txmlFragement);
-            template.Name = "temp1";
+            // template.Name = "temp1";
+
             //Create a new node.
             System.Xml.XmlNode TemplateNodeNew = TemplateNode.Clone();
             TemplateNodeNew.RemoveAll();

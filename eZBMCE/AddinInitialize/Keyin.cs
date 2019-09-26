@@ -3,6 +3,7 @@ MDL LOAD "D:\GithubProjects\eZBM\bin\eZBMCE.dll"
 */
 
 using System.Windows.Forms;
+using eZBMCE.Cif;
 using MSDIAddin;
 
 namespace eZBMCE.AddinInitialize
@@ -19,6 +20,13 @@ namespace eZBMCE.AddinInitialize
         {
             MessageBox.Show(@"KeyinTest");
             MSDIAddinClass.MstnControlDemo(null);
+        }
+
+        /// <summary> CommandKeyin </summary>
+        /// <param name="unparsed"></param>    
+        public static void Test_Cif(string unparsed)
+        {
+           CifTest.Test_Cif();
         }
     }
 }
